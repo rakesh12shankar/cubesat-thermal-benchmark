@@ -7,12 +7,11 @@ ROOT=Path(__file__).resolve().parent
 def main():
     lab=ROOT/'results'
     def case(label):
-        if lab.exists():
-            qualified=ROOT/'data/ansys'/f'interface_{label}_qualified'
-            if qualified.exists():return qualified
-            settled=ROOT/'data/ansys'/f'interface_{label}_settled'
-            return settled if settled.exists() else ROOT/'data/ansys'/f'interface_{label}'
-        return ROOT/'data/ansys'/f'captured_interface_{label}'
+        for name in [f'interface_{label}_qualified',f'interface_{label}_settled',
+                     f'interface_{label}',f'captured_interface_{label}']:
+            folder=ROOT/'data/ansys'/name
+            if (folder/'model.inp').is_file():return folder
+        raise FileNotFoundError(f'No generated or captured interface case for {label}')
     base=case('bonded_control'); original=np.load(base/'mesh.npz')
     fixed=lambda s:[line for line in s.splitlines() if line.startswith(('MP,','SFE,','VFSM,','CNVTOL,','RADOPT,','HEMIOPT,','SPCTEMP,'))]
     reference=fixed((base/'model.inp').read_text(encoding='utf-8')); checks={}
