@@ -1,0 +1,1 @@
+Saved native CAD reopened; 27 solids; 351 intersection checks; total solid volume=0.00024793600000000014 m3.

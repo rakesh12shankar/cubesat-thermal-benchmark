@@ -1,0 +1,327 @@
+{
+  "result_steps": 1117,
+  "final_time_s": 11160.0,
+  "temperature_min_K": 232.406029977,
+  "temperature_max_K": 358.004784875,
+  "heat_capacity_J_K": 605.3914104,
+  "maximum_discrete_energy_residual_J": 5.8967051899116996e-05,
+  "maximum_relative_energy_residual": 9.340927345745847e-06,
+  "rms_energy_residual_W": 9.505409321503273e-07,
+  "final_part_average_K": {
+    "battery": 270.07684024242195,
+    "bolts": 272.39062418755856,
+    "frame": 279.1793337325629,
+    "panel1": 307.82897408032534,
+    "panel2": 279.9368849481837,
+    "panel3": 291.7257136301588,
+    "panel4": 264.3696402586754,
+    "panel5": 268.33794648679327,
+    "panel6": 268.25996957499643,
+    "pcb1": 266.95216741527366,
+    "pcb2": 270.8916340454546,
+    "pcb3": 269.6384398284464,
+    "pcb4": 266.2273418955913
+  },
+  "validation_status": "Solver and conservation audit of a reconstructed model; paper agreement is evaluated separately.",
+  "center_point_coordinates_mm": {
+    "panel1": [
+      1,
+      50,
+      50
+    ],
+    "panel2": [
+      99,
+      50,
+      50
+    ],
+    "panel3": [
+      50,
+      1,
+      50
+    ],
+    "panel4": [
+      50,
+      99,
+      50
+    ],
+    "panel5": [
+      50,
+      50,
+      1
+    ],
+    "panel6": [
+      50,
+      50,
+      99
+    ],
+    "pcb1": [
+      50,
+      50,
+      21
+    ],
+    "pcb2": [
+      50,
+      50,
+      38
+    ],
+    "pcb3": [
+      50,
+      50,
+      62
+    ],
+    "pcb4": [
+      50,
+      50,
+      79
+    ],
+    "battery": [
+      50,
+      50,
+      43.5
+    ]
+  },
+  "seeded_run_end_minus_start_max_node_K": 0.853359538999996,
+  "initial_state_note": "Imported stored nodal temperatures; equivalent phase-zero origin is documented in the case provenance.",
+  "last_orbit_part_average_range_K": {
+    "battery": {
+      "min": 269.6029205288047,
+      "max": 277.52895453776557
+    },
+    "bolts": {
+      "min": 253.3390394224918,
+      "max": 285.0677906517114
+    },
+    "frame": {
+      "min": 247.57314798109377,
+      "max": 290.3329503502653
+    },
+    "panel1": {
+      "min": 241.44442622807696,
+      "max": 315.72671051226337
+    },
+    "panel2": {
+      "min": 252.58707675050897,
+      "max": 288.8458382091551
+    },
+    "panel3": {
+      "min": 245.0793100429056,
+      "max": 303.5934632640649
+    },
+    "panel4": {
+      "min": 244.25988747425333,
+      "max": 325.12910208411466
+    },
+    "panel5": {
+      "min": 245.7627090019944,
+      "max": 278.3921642931399
+    },
+    "panel6": {
+      "min": 245.7688655851184,
+      "max": 278.38009661514104
+    },
+    "pcb1": {
+      "min": 259.95176970724225,
+      "max": 280.7355578399857
+    },
+    "pcb2": {
+      "min": 268.0354013263117,
+      "max": 278.63954363244613
+    },
+    "pcb3": {
+      "min": 263.1344871812081,
+      "max": 283.0962973328376
+    },
+    "pcb4": {
+      "min": 259.2970864780488,
+      "max": 281.3571408888549
+    }
+  },
+  "last_orbit_part_nodal_range_K": {
+    "battery": {
+      "minimum_K": 269.191014285,
+      "maximum_K": 277.773424869,
+      "maximum_simultaneous_spread_K": 0.8626846960000307
+    },
+    "bolts": {
+      "minimum_K": 249.778777837,
+      "maximum_K": 291.808700525,
+      "maximum_simultaneous_spread_K": 14.29427950600001
+    },
+    "frame": {
+      "minimum_K": 244.572043675,
+      "maximum_K": 301.970783331,
+      "maximum_simultaneous_spread_K": 22.030503127999964
+    },
+    "panel1": {
+      "minimum_K": 232.407212231,
+      "maximum_K": 348.170969682,
+      "maximum_simultaneous_spread_K": 60.42013086000003
+    },
+    "panel2": {
+      "minimum_K": 248.676619275,
+      "maximum_K": 301.269835741,
+      "maximum_simultaneous_spread_K": 21.275675663000015
+    },
+    "panel3": {
+      "minimum_K": 241.972647431,
+      "maximum_K": 339.534660555,
+      "maximum_simultaneous_spread_K": 68.24650623600002
+    },
+    "panel4": {
+      "minimum_K": 239.875430573,
+      "maximum_K": 358.004784875,
+      "maximum_simultaneous_spread_K": 64.30633192799996
+    },
+    "panel5": {
+      "minimum_K": 238.470316186,
+      "maximum_K": 300.062495887,
+      "maximum_simultaneous_spread_K": 39.79652321699996
+    },
+    "panel6": {
+      "minimum_K": 238.441147405,
+      "maximum_K": 300.072749474,
+      "maximum_simultaneous_spread_K": 39.83298762199996
+    },
+    "pcb1": {
+      "minimum_K": 244.97197237,
+      "maximum_K": 300.412648287,
+      "maximum_simultaneous_spread_K": 27.911227435
+    },
+    "pcb2": {
+      "minimum_K": 244.660729972,
+      "maximum_K": 301.64927341,
+      "maximum_simultaneous_spread_K": 28.09391753600005
+    },
+    "pcb3": {
+      "minimum_K": 244.653698942,
+      "maximum_K": 301.653087008,
+      "maximum_simultaneous_spread_K": 27.331354653999995
+    },
+    "pcb4": {
+      "minimum_K": 244.958717191,
+      "maximum_K": 300.418783336,
+      "maximum_simultaneous_spread_K": 28.393106012000032
+    }
+  },
+  "last_orbit_rms_energy_residual_W": 9.489611346669023e-07,
+  "last_orbit_rms_energy_residual_fraction_of_heat_throughput": 5.62291295356565e-08,
+  "energy_residual_note": "Relative step error is ill-conditioned when net stored-energy change approaches zero; use RMS power residual and heat-throughput normalization.",
+  "last_orbit_periodicity_max_node_K": 0.8526295350000055,
+  "periodicity_pass_1K": true,
+  "supporting_thesis_comparison": {
+    "panel1": {
+      "rmse_K": 6.8810991322232455,
+      "max_abs_difference_K": 14.711348767443212,
+      "mean_bias_K": -3.5134672513692076
+    },
+    "panel2": {
+      "rmse_K": 3.7296184829252144,
+      "max_abs_difference_K": 5.33931957189111,
+      "mean_bias_K": -3.534047150802019
+    },
+    "panel3": {
+      "rmse_K": 6.6195564449139574,
+      "max_abs_difference_K": 15.079860291326156,
+      "mean_bias_K": -3.307946663608994
+    },
+    "panel4": {
+      "rmse_K": 5.737812730985124,
+      "max_abs_difference_K": 14.182788901181254,
+      "mean_bias_K": -2.963734045828718
+    },
+    "panel5": {
+      "rmse_K": 3.8406655942493946,
+      "max_abs_difference_K": 5.799313583359151,
+      "mean_bias_K": 3.3674458215639205
+    },
+    "panel6": {
+      "rmse_K": 3.050446801900694,
+      "max_abs_difference_K": 4.80109928902516,
+      "mean_bias_K": 2.570988951284395
+    },
+    "pcb4": {
+      "rmse_K": 2.4314404991930805,
+      "max_abs_difference_K": 4.307886463042337,
+      "mean_bias_K": -1.7293862103838498
+    },
+    "pcb3": {
+      "rmse_K": 3.630714045676525,
+      "max_abs_difference_K": 6.072884698552514,
+      "mean_bias_K": -2.9564236913566533
+    },
+    "pcb2": {
+      "rmse_K": 3.101780830591168,
+      "max_abs_difference_K": 5.177067401638283,
+      "mean_bias_K": -2.373106644661165
+    },
+    "pcb1": {
+      "rmse_K": 2.0143146828765124,
+      "max_abs_difference_K": 3.6819670592898888,
+      "mean_bias_K": -1.2529674092611978
+    },
+    "battery": {
+      "rmse_K": 2.607585474493004,
+      "max_abs_difference_K": 3.899766888667102,
+      "mean_bias_K": -2.360777476496936
+    }
+  },
+  "comparison_limitation": "Supporting thesis, not journal validation; 5580 s reconstruction versus approximately 5600 s plotted reference, geometric/contact assumptions, and view-factor method differences.",
+  "direct_journal_comparison": {
+    "panel1": {
+      "rmse_K": 6.8633154822212035,
+      "max_abs_difference_K": 14.71071752206285,
+      "mean_bias_K": -3.4958056095539614
+    },
+    "panel2": {
+      "rmse_K": 3.72673552440414,
+      "max_abs_difference_K": 5.33995472817719,
+      "mean_bias_K": -3.5313028842373493
+    },
+    "panel3": {
+      "rmse_K": 6.620681536083623,
+      "max_abs_difference_K": 15.07949485529133,
+      "mean_bias_K": -3.30346472763861
+    },
+    "panel4": {
+      "rmse_K": 5.7410693164445625,
+      "max_abs_difference_K": 14.183332831564769,
+      "mean_bias_K": -2.975288556789149
+    },
+    "panel5": {
+      "rmse_K": 3.8392025230241615,
+      "max_abs_difference_K": 5.799294614463406,
+      "mean_bias_K": 3.365118058168423
+    },
+    "panel6": {
+      "rmse_K": 3.0498106595277497,
+      "max_abs_difference_K": 4.800712715698296,
+      "mean_bias_K": 2.5693954413826603
+    },
+    "pcb4": {
+      "rmse_K": 2.432431410430921,
+      "max_abs_difference_K": 4.30803193412504,
+      "mean_bias_K": -1.7292585518996437
+    },
+    "pcb3": {
+      "rmse_K": 3.631306394214798,
+      "max_abs_difference_K": 6.072991998877228,
+      "mean_bias_K": -2.9558404592141274
+    },
+    "pcb2": {
+      "rmse_K": 3.0995465213418,
+      "max_abs_difference_K": 5.17697527702677,
+      "mean_bias_K": -2.3699217741005576
+    },
+    "pcb1": {
+      "rmse_K": 2.0155057566483996,
+      "max_abs_difference_K": 3.6822575433234874,
+      "mean_bias_K": -1.2530737007471435
+    },
+    "battery": {
+      "rmse_K": 2.605984671303245,
+      "max_abs_difference_K": 3.89992953441606,
+      "mean_bias_K": -2.358972384065856
+    }
+  },
+  "journal_comparison_note": "Figure 11 volume averages, epsilon 0.5; original time axis, no fitting. Source and geometry ambiguities remain. This is numerical comparison, not experimental validation."
+}

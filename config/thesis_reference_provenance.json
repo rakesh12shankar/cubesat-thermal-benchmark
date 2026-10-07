@@ -1,0 +1,22 @@
+{
+  "source": "Morsch 2021 thesis, Figure 48, printed page 70 / PDF page 92",
+  "extraction": "PDF vector polylines calibrated to axis grid lines; endpoints interpolated to 10-second samples",
+  "limitations": [
+    "Plotted curves, not raw solver data",
+    "Thesis orbit differs from journal definition",
+    "Treat discrepancies below approximately 0.5 K or 10 s as unresolved by source calibration"
+  ],
+  "curve_end_times_s": {
+    "panel1": 5599.991136498636,
+    "panel2": 5599.991136498636,
+    "panel3": 5599.991136498636,
+    "panel4": 5599.991136498636,
+    "panel5": 5599.991136498636,
+    "panel6": 5599.991136498636,
+    "pcb4": 5599.991136498636,
+    "pcb3": 5599.991136498636,
+    "pcb2": 5599.991136498636,
+    "pcb1": 5599.991136498636,
+    "battery": 5599.991136498636
+  }
+}

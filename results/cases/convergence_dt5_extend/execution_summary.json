@@ -1,0 +1,15 @@
+{
+  "solver": "ANSYS MAPDL 2024 R1",
+  "log_source_case": "convergence_dt5_extend",
+  "recorded_case": "convergence_dt5_extend",
+  "solve": {
+    "error_count": 0,
+    "warning_count": 3,
+    "elapsed_seconds": 922.0
+  },
+  "export": {
+    "error_count": 0,
+    "warning_count": 0,
+    "elapsed_seconds": 27.0
+  }
+}

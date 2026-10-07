@@ -1,0 +1,30 @@
+{
+  "bonded_control": {
+    "element_geometry_unchanged": true,
+    "materials_radiation_settings_unchanged": true,
+    "input_matches_mesh": true,
+    "all_nodes_initialized_from_captured_state": true,
+    "periodic_loads_cover_entire_run": true
+  },
+  "seams_off": {
+    "element_geometry_unchanged": true,
+    "materials_radiation_settings_unchanged": true,
+    "input_matches_mesh": true,
+    "all_nodes_initialized_from_captured_state": true,
+    "periodic_loads_cover_entire_run": true
+  },
+  "pcb_frame_off": {
+    "element_geometry_unchanged": true,
+    "materials_radiation_settings_unchanged": true,
+    "input_matches_mesh": true,
+    "all_nodes_initialized_from_captured_state": true,
+    "periodic_loads_cover_entire_run": true
+  },
+  "both_off": {
+    "element_geometry_unchanged": true,
+    "materials_radiation_settings_unchanged": true,
+    "input_matches_mesh": true,
+    "all_nodes_initialized_from_captured_state": true,
+    "periodic_loads_cover_entire_run": true
+  }
+}

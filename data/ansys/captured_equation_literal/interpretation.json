@@ -1,0 +1,13 @@
+{
+  "case": "equation_literal",
+  "solar_albedo_absorption": 1,
+  "earth_IR_absorption": 1,
+  "external_emissivity": 0.72,
+  "internal_emissivity": 0.5,
+  "duration_s": 11160,
+  "warmup_orbits_60s": 0,
+  "final_orbits_10s": 2,
+  "note": "Alternative reading of journal equations 20\u201324. Not a fitted or confirmed correction. Geometry, properties, phase and radiation discretization unchanged.",
+  "initial_state_source": "equation_literal final state at 39060 s",
+  "history": "Original 5 coarse and 2 refined cycles, then 2 additional refined cycles with exported nodal-state seeding. Seed time is an exact multiple of the orbital period; reset to phase zero."
+}

@@ -1,0 +1,15 @@
+{
+  "solver": "ANSYS MAPDL 2024 R1",
+  "log_source_case": "interface_bonded_control",
+  "recorded_case": "convergence_h15_features1",
+  "solve": {
+    "error_count": 0,
+    "warning_count": 3,
+    "elapsed_seconds": 494.0
+  },
+  "export": {
+    "error_count": 0,
+    "warning_count": 0,
+    "elapsed_seconds": 28.0
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "initial_state_source": "coarse spectral-absorption orbit 8, time 44640 s",
+  "time_origin": "Reset to equivalent phase zero",
+  "duration_s": 11160,
+  "maximum_step_s": 10,
+  "internal_view_factor_balancing": "VFSM,DEFINE,1,2,1000,1E-8; exact closed enclosure only",
+  "heat_convergence_relative_tolerance": 1e-08,
+  "external_view_factors": "No closure enforcement for the open exterior enclosure",
+  "control": "Internal reciprocity/row closure balancing; strict variant additionally tightens nonlinear heat convergence. All physical inputs fixed."
+}

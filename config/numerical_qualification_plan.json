@@ -1,0 +1,47 @@
+{
+  "spatial_sequence": [
+    {
+      "background_spacing_mm": 15,
+      "thin_region_divisions": 1
+    },
+    {
+      "background_spacing_mm": 10,
+      "thin_region_divisions": 2
+    },
+    {
+      "background_spacing_mm": 7.5,
+      "thin_region_divisions": 3
+    }
+  ],
+  "time_step_starting_state_note": "The 2.5 s case uses the completed initial 5 s phase-zero field as a continuation seed after the initial 5 s run showed 0.1096 K drift. Starting states are captured; every selected final solution independently meets the unchanged matching-phase periodicity criterion. This startup choice was made before observing 2.5 s results.",
+  "forcing_sampling_note": "The 10 s forcing table and finite-Earth-disk quadrature are held fixed in the solver time-step sequence; their own sampling convergence is outside this study.",
+  "time_step_sequence_s": [
+    10,
+    5,
+    2.5
+  ],
+  "mesh_note": "Anisotropic geometry-aware refinement; no uniform-ratio Richardson extrapolation or GCI is claimed. Thin regions are intervals <=2 mm.",
+  "screening_acceptance": {
+    "adjacent_component_average_max_difference_K": 0.25,
+    "adjacent_battery_nodal_extreme_difference_K": 0.25,
+    "adjacent_pcb_maximum_simultaneous_spread_difference_K": 0.5,
+    "matching_phase_periodicity_K": 0.1
+  },
+  "interpretation": "Targets are analyst-selected screening criteria, not a universal accuracy guarantee. Failed targets will be reported and additional refinement considered.",
+  "hemicube_resolution_sequence": [
+    20,
+    40,
+    80
+  ],
+  "angular_study_basis": "Added after inspecting HEMIOPT=20, before observing higher-resolution angular results. Official ANSYS documentation identifies higher HRES as a means of increasing view-factor accuracy.",
+  "angular_documentation": "https://ansyshelp.ansys.com/public/Views/Secured/corp/v242/en/ans_cmd/Hlp_C_HEMIOPT.html",
+  "initial_spatial_time_plan_declared_before_refined_results": true,
+  "adaptive_spatial_check": {
+    "rule": "If the 10 mm / thin-2 to 7.5 mm / thin-3 comparison fails any fixed screening target, add one 6 mm / thin-3 case; report any remaining failed target explicitly.",
+    "nodes": 30954,
+    "elements": 23592,
+    "cycles": 2,
+    "starting_field": "Piecewise trilinear interpolation of the qualified 7.5 mm final phase-zero field.",
+    "planning_timing": "Specified after the 10 mm result, before observing the 7.5 mm result. The original acceptance targets remain unchanged."
+  }
+}

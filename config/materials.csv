@@ -1,0 +1,5 @@
+part,density_kg_m3,specific_heat_J_kg_K,conductivity_W_m_K
+solar_panel,2325,1103,1.03
+frame_and_bolts,2810,948,140
+PCB,2120,975,0.64
+battery,2247,1110,23

@@ -1,0 +1,15 @@
+{
+  "solver": "ANSYS MAPDL 2024 R1",
+  "log_source_case": "uncertainty_panel_k_low_extend",
+  "recorded_case": "uncertainty_panel_k_low_extend",
+  "solve": {
+    "error_count": 0,
+    "warning_count": 3,
+    "elapsed_seconds": 462.0
+  },
+  "export": {
+    "error_count": 0,
+    "warning_count": 0,
+    "elapsed_seconds": 18.0
+  }
+}

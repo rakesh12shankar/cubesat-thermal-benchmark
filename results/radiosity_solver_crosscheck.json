@@ -1,0 +1,21 @@
+{
+  "cases": [
+    "convergence_h15_features1",
+    "convergence_gs_control"
+  ],
+  "maximum_component_average_curve_difference_K": 0.0032174529531516782,
+  "by_part_K": {
+    "battery": 0.0032174529531516782,
+    "panel1": 0.0008190187793388759,
+    "panel2": 0.00088313456421929,
+    "panel3": 0.0007773726266577796,
+    "panel4": 0.0009619908575473346,
+    "panel5": 0.0009378264222732469,
+    "panel6": 0.000897229768042962,
+    "pcb1": 0.0018114171151069058,
+    "pcb2": 0.0028509285397717576,
+    "pcb3": 0.0018817708527194554,
+    "pcb4": 0.001481874493038049
+  },
+  "interpretation": "Different periodic starting iterates are included in these small differences; identical physical problem, tight convergence tolerances."
+}

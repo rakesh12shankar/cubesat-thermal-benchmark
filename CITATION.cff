@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If using this reconstruction, cite this repository and the benchmark paper."
+title: "CubeSat thermal benchmark: conduction and radiation"
+type: software
+authors:
+  - family-names: "Shankar"
+    given-names: "Rakesh"
+version: 0.2.0
+date-released: "2026-10-07"
+license: MIT
+abstract: "SolidWorks/ANSYS reconstruction, verification and discrepancy study of a published 1U CubeSat conduction/radiation problem."
+references:
+  - type: article
+    title: "Simulation of a CubeSat with internal heat transfer using Finite Volume Method"
+    authors:
+      - family-names: "Morsch Filho"
+        given-names: "E."
+      - family-names: "Seman"
+        given-names: "L. O."
+      - family-names: "Nicolau"
+        given-names: "V. P."
+    journal: "Applied Thermal Engineering"
+    volume: "193"
+    year: 2021
+    doi: "10.1016/j.applthermaleng.2021.117039"
+
+repository-code: "https://github.com/rakesh12shankar/cubesat-thermal-benchmark"

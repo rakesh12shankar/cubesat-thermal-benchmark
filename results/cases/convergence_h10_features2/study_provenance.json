@@ -1,0 +1,14 @@
+{
+  "dt_s": 10,
+  "cycles": 3,
+  "settling_cycles": 1,
+  "duration_s": 16740,
+  "recorded_cycles": 2,
+  "radiosity_solver": 2,
+  "changes": {},
+  "input_uncertainty_note": "Scenario ranges are declared engineering assumptions, not measured probability bounds.",
+  "mesh_h_mm": 10,
+  "thin_region_divisions": 2,
+  "seed_source": "interface_bonded_control",
+  "seed_method": "Piecewise trilinear interpolation within the same occupied part; no interpolation across vacuum"
+}

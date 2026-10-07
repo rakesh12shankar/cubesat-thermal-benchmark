@@ -1,0 +1,22 @@
+name: Reproducibility checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  lightweight-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-lock.txt
+      - run: python check_inputs.py
+      - run: python render_results.py
+      - run: python check_interface_inputs.py
+      - run: python report_interface_limits.py
+      - run: python report_qualification.py --cases results/cases --out results --selection config/qualification_case_selection.json
+      - run: python check_qualification_inputs.py data/ansys/captured_convergence_* data/ansys/captured_uncertainty_*
+      - run: python check_release.py

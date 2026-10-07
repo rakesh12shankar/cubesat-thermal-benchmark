@@ -1,0 +1,275 @@
+{
+  "source_sha256": "11d749d6d078b6a51e34c903279df31fc449e398a485113d950a17449f14a4a0",
+  "sampling_s": 10,
+  "temperature_units": "K",
+  "flux_units": "W/m2",
+  "figure11_paths": [
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    249,
+    250,
+    251,
+    252,
+    253
+  ],
+  "figure9_paths": [
+    142,
+    143,
+    144,
+    145,
+    146,
+    147
+  ],
+  "calibration": "PDF page 9: panel x0=106.005,x5000=274.286,y230=206.756,y350=57.800; internal x0=318.930,x5000=487.210,y260=206.756,y285=57.800. PDF page 7: x0=339.959,x5000=527.325,y0=418.8959,y1600=258.072.",
+  "journal_minus_thesis": {
+    "panel1": {
+      "rmse": 0.0011858301787607936,
+      "maximum_absolute_difference": 0.0048372038183401855,
+      "mean_bias": 0.00034571764212095525
+    },
+    "panel2": {
+      "rmse": 0.0008150205499307561,
+      "maximum_absolute_difference": 0.0025241890626830354,
+      "mean_bias": 0.0002045284552116626
+    },
+    "panel3": {
+      "rmse": 0.001141189751804558,
+      "maximum_absolute_difference": 0.006352803914808192,
+      "mean_bias": 0.00012285228592166792
+    },
+    "panel4": {
+      "rmse": 0.0012272953542799708,
+      "maximum_absolute_difference": 0.00797903466286698,
+      "mean_bias": 0.00022502307173831763
+    },
+    "panel5": {
+      "rmse": 0.0008670499291939461,
+      "maximum_absolute_difference": 0.0023879604152057254,
+      "mean_bias": 0.00042036946267244905
+    },
+    "panel6": {
+      "rmse": 0.0008239829970902679,
+      "maximum_absolute_difference": 0.002620366755024861,
+      "mean_bias": 0.000378811154155423
+    },
+    "pcb4": {
+      "rmse": 0.00025140620392910567,
+      "maximum_absolute_difference": 0.0007392710256226565,
+      "mean_bias": 0.00011499342285233689
+    },
+    "pcb3": {
+      "rmse": 0.0002516307374722135,
+      "maximum_absolute_difference": 0.0007624948217994643,
+      "mean_bias": 0.00015421102296451169
+    },
+    "pcb2": {
+      "rmse": 0.00021658506067460918,
+      "maximum_absolute_difference": 0.0007661496309765425,
+      "mean_bias": 5.672265013216404e-05
+    },
+    "pcb1": {
+      "rmse": 0.00026039937815469687,
+      "maximum_absolute_difference": 0.0007740873587636088,
+      "mean_bias": 0.00011671195767847926
+    },
+    "battery": {
+      "rmse": 0.00018931102007842165,
+      "maximum_absolute_difference": 0.000499060804486362,
+      "mean_bias": 0.00010247762632170503
+    }
+  },
+  "temperature_comparisons": {
+    "Coarse mesh, orbit 8": {
+      "panel1": {
+        "rmse": 6.929128348938694,
+        "maximum_absolute_difference": 14.802372919595655,
+        "mean_bias": -3.5881307070482036
+      },
+      "panel2": {
+        "rmse": 3.7819314979728587,
+        "maximum_absolute_difference": 5.373315854965256,
+        "mean_bias": -3.6002891793711487
+      },
+      "panel3": {
+        "rmse": 6.632795836105586,
+        "maximum_absolute_difference": 15.085341135730005,
+        "mean_bias": -3.3831235229389485
+      },
+      "panel4": {
+        "rmse": 5.8238209350886185,
+        "maximum_absolute_difference": 14.359205231321766,
+        "mean_bias": -3.032748975452541
+      },
+      "panel5": {
+        "rmse": 3.7621800657372244,
+        "maximum_absolute_difference": 5.637560090368481,
+        "mean_bias": 3.2832429728663306
+      },
+      "panel6": {
+        "rmse": 2.971734548030327,
+        "maximum_absolute_difference": 4.636557819737163,
+        "mean_bias": 2.487381365500171
+      },
+      "pcb4": {
+        "rmse": 2.449273106456072,
+        "maximum_absolute_difference": 4.262256090355606,
+        "mean_bias": -1.8737686325257454
+      },
+      "pcb3": {
+        "rmse": 3.644068935788387,
+        "maximum_absolute_difference": 5.989666579136383,
+        "mean_bias": -3.0623523971626576
+      },
+      "pcb2": {
+        "rmse": 3.192143615946796,
+        "maximum_absolute_difference": 5.311953864679424,
+        "mean_bias": -2.4680896371039394
+      },
+      "pcb1": {
+        "rmse": 2.0166971860401124,
+        "maximum_absolute_difference": 3.6463728295974533,
+        "mean_bias": -1.395641624780447
+      },
+      "battery": {
+        "rmse": 2.673649220183156,
+        "maximum_absolute_difference": 3.9298088186657765,
+        "mean_bias": -2.4586467896808597
+      }
+    },
+    "Fine mesh, orbit 7": {
+      "panel1": {
+        "rmse": 6.6534822712811,
+        "maximum_absolute_difference": 14.173353324140805,
+        "mean_bias": -3.51517190211713
+      },
+      "panel2": {
+        "rmse": 3.7283315666973227,
+        "maximum_absolute_difference": 5.249151404126394,
+        "mean_bias": -3.5585159096316303
+      },
+      "panel3": {
+        "rmse": 6.358534871746998,
+        "maximum_absolute_difference": 14.39097038141665,
+        "mean_bias": -3.3255973201424167
+      },
+      "panel4": {
+        "rmse": 5.514158019834137,
+        "maximum_absolute_difference": 13.581583557385386,
+        "mean_bias": -2.996738168170157
+      },
+      "panel5": {
+        "rmse": 3.682091810600463,
+        "maximum_absolute_difference": 5.584625418773271,
+        "mean_bias": 3.2135828839715423
+      },
+      "panel6": {
+        "rmse": 2.8950756127110946,
+        "maximum_absolute_difference": 4.584311694013081,
+        "mean_bias": 2.417660817121604
+      },
+      "pcb4": {
+        "rmse": 2.3749150552147706,
+        "maximum_absolute_difference": 4.157627968683698,
+        "mean_bias": -1.773634610797481
+      },
+      "pcb3": {
+        "rmse": 3.5289278994592927,
+        "maximum_absolute_difference": 5.852217051272987,
+        "mean_bias": -2.9219096593969205
+      },
+      "pcb2": {
+        "rmse": 3.065032225243966,
+        "maximum_absolute_difference": 5.140389728502896,
+        "mean_bias": -2.312708602768367
+      },
+      "pcb1": {
+        "rmse": 1.952621716423312,
+        "maximum_absolute_difference": 3.5468866598273507,
+        "mean_bias": -1.2926079252206177
+      },
+      "battery": {
+        "rmse": 2.5187817804402686,
+        "maximum_absolute_difference": 3.7644293136546025,
+        "mean_bias": -2.2901334295901887
+      }
+    }
+  },
+  "incident_flux_comparisons": {
+    "panel1": {
+      "full": {
+        "rmse": 5.591727302525638,
+        "maximum_absolute_difference": 12.804281313758363,
+        "mean_bias": -0.16984445654459315
+      },
+      "outside_eclipse_edges": {
+        "rmse": 5.663222607640376,
+        "maximum_absolute_difference": 12.804281313758363,
+        "mean_bias": -0.17424005690550778
+      }
+    },
+    "panel2": {
+      "full": {
+        "rmse": 20.290375514793173,
+        "maximum_absolute_difference": 469.9908547560709,
+        "mean_bias": 0.559055247715728
+      },
+      "outside_eclipse_edges": {
+        "rmse": 3.8482113958105852,
+        "maximum_absolute_difference": 12.307591501515844,
+        "mean_bias": -0.3175303388581731
+      }
+    },
+    "panel3": {
+      "full": {
+        "rmse": 54.45995310211553,
+        "maximum_absolute_difference": 1282.759637432763,
+        "mean_bias": 0.1264612150469253
+      },
+      "outside_eclipse_edges": {
+        "rmse": 4.171303496208701,
+        "maximum_absolute_difference": 13.393470645061768,
+        "mean_bias": -2.233183317850691
+      }
+    },
+    "panel4": {
+      "full": {
+        "rmse": 3.5096584785585234,
+        "maximum_absolute_difference": 9.271726081059,
+        "mean_bias": 1.1438408024946247
+      },
+      "outside_eclipse_edges": {
+        "rmse": 3.5294603848466135,
+        "maximum_absolute_difference": 9.271726081059,
+        "mean_bias": 1.2206496089653267
+      }
+    },
+    "panel5": {
+      "full": {
+        "rmse": 0.7156068969840464,
+        "maximum_absolute_difference": 1.5629263441424825,
+        "mean_bias": -0.42213759198930006
+      },
+      "outside_eclipse_edges": {
+        "rmse": 0.7192151668129336,
+        "maximum_absolute_difference": 1.5629263441424825,
+        "mean_bias": -0.41866092975803193
+      }
+    },
+    "panel6": {
+      "full": {
+        "rmse": 0.7156068969840464,
+        "maximum_absolute_difference": 1.5629263441424825,
+        "mean_bias": -0.42213759198930006
+      },
+      "outside_eclipse_edges": {
+        "rmse": 0.7192151668129336,
+        "maximum_absolute_difference": 1.5629263441424825,
+        "mean_bias": -0.41866092975803193
+      }
+    }
+  }
+}

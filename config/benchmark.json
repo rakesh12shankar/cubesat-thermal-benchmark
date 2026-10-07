@@ -1,0 +1,181 @@
+{
+  "paper": {
+    "title": "Simulation of a CubeSat with internal heat transfer using Finite Volume Method",
+    "year": 2021,
+    "doi": "10.1016/j.applthermaleng.2021.117039"
+  },
+  "units": {
+    "geometry": "mm",
+    "thermal": "SI",
+    "temperature": "K"
+  },
+  "geometry": {
+    "envelope_mm": [
+      100,
+      100,
+      100
+    ],
+    "panel_mm": [
+      100,
+      100,
+      2
+    ],
+    "frame_cross_section_mm": [
+      5,
+      5
+    ],
+    "bolt_cross_section_mm": [
+      5,
+      5
+    ],
+    "pcb_mm": [
+      90,
+      90,
+      2
+    ],
+    "pcb_count": 4,
+    "battery_mm": [
+      60,
+      60,
+      9
+    ],
+    "battery_on": "PCB2",
+    "reconstruction": {
+      "outer_extent_mm": [
+        0,
+        100
+      ],
+      "PCB_bottom_z_mm": [
+        20,
+        37,
+        61,
+        78
+      ],
+      "battery_bounds_mm": [
+        [
+          20,
+          80
+        ],
+        [
+          20,
+          80
+        ],
+        [
+          39,
+          48
+        ]
+      ],
+      "frame_inner_bounds_mm": [
+        2,
+        98
+      ],
+      "frame_member_thickness_mm": 5,
+      "bolt_xy_intervals_mm": [
+        [
+          10,
+          15
+        ],
+        [
+          85,
+          90
+        ]
+      ],
+      "panel_edge_convention": "Z panels own horizontal edges; X panels own remaining vertical edges; Y panels trimmed to remaining extent",
+      "interfaces": "shared nodes / perfect thermal continuity; no empirical contact coefficient",
+      "source_gaps_interpretation": "20 mm end dimensions are measured from outer envelope; actual inner clearances are 18 mm",
+      "assumptions": [
+        "Frame placement inside panels",
+        "Bolt offsets",
+        "Battery lateral centering",
+        "Corner notches and bolt holes in PCBs",
+        "Finite panel edge partition"
+      ]
+    },
+    "printed_end_and_clear_gap_dimensions_mm": [
+      20,
+      15,
+      22,
+      15,
+      20
+    ],
+    "reconstructed_internal_clear_gaps_mm": [
+      18,
+      15,
+      22,
+      15,
+      18
+    ],
+    "nominal_pcb_margin_from_outer_envelope_mm": 5
+  },
+  "internal_emissivity_cases": [
+    0,
+    0.5,
+    1
+  ],
+  "external_panel_emissivity": 0.72,
+  "external_panel_solar_absorptivity": 0.77,
+  "internal_heat_generation_W": 0,
+  "orbit_thesis_TLE1": {
+    "inclination_deg": 51.63,
+    "raan_deg": 142.83,
+    "eccentricity": 0.00026,
+    "argument_of_perigee_deg": 168.63,
+    "mean_anomaly_deg": 191.47,
+    "mean_motion_rev_per_day": 15.451,
+    "simulation_start_as_printed": "2015-01-01 00:00; time standard needs verification",
+    "attitude": "nadir; surface 2 faces Earth"
+  },
+  "reference_time_step_s": 10,
+  "periodic_temperature_tolerance_K": 1,
+  "status": "Verified reconstructed model; direct journal comparison complete; close temperature replication and formal mesh convergence not established.",
+  "orbit_journal": {
+    "altitude_km": 431,
+    "inclination_deg": 51.6,
+    "ascending_node_deg": 0,
+    "beta_deg": 0,
+    "attitude": "nadir; +X / face 2 points toward Earth",
+    "reconstructed_period_s": 5580,
+    "eclipse_ingress_s": 1720,
+    "loads": "analytic circular-orbit reconstruction; not digitized journal data",
+    "source": "Journal section 3.4; full text mirror checked 2026-10-06",
+    "load_reconstruction_constants": {
+      "earth_radius_km": 6371,
+      "solar_constant_W_m2": 1367,
+      "earth_IR_W_m2": 237,
+      "albedo_factor": 0.3,
+      "space_temperature_K": 2.7,
+      "earth_view_factor_method": "finite Earth disk; 80 Gauss polar nodes by 240 azimuth directions",
+      "albedo_model": "Lambertian phase approximation, albedo factor times Earth view factor times max(cos(solar zenith at sub-satellite point),0)"
+    }
+  },
+  "orbital_qualification": {
+    "Time step, 10 s \u2192 5 s": {
+      "volume_average": 0.3983833178820646,
+      "center_point": 0.495405047269287
+    },
+    "Radiation hemisphere divisions, 20 \u2192 40": {
+      "volume_average": 0.019664995740640734,
+      "center_point": 0.02981938249996574
+    },
+    "In-plane mesh, 2192 \u2192 3124 elements": {
+      "volume_average": 0.8153147158213301,
+      "center_point": 0.4964950322691948
+    }
+  },
+  "load_audit_absorbed_energy_relative_difference": -0.0002905241979150785,
+  "journal_validation": {
+    "report": "results/Journal_Validation_Report.md",
+    "status": "Direct journal comparison complete; close quantitative temperature validation not achieved",
+    "figures": [
+      9,
+      11
+    ],
+    "journal_vs_thesis_max_temperature_difference_K": 0.00797903466286698
+  },
+  "release_solver_settings": {
+    "relative_nonlinear_heat_tolerance": 1e-08,
+    "closed_internal_view_factor_adjustment": "VFSM option 2, max 1000 iterations, row tolerance 1e-8",
+    "open_exterior_view_factor_adjustment": "none",
+    "historical_outputs": "Earlier sensitivity/emissivity cases use original default heat convergence; improved epsilon 0.5 case is separately labeled."
+  }
+}

@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png -text
+*.npz -text
+*.npy -text
+*.SLDPRT -text
+*.STEP -text
+*.x_t -text

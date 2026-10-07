@@ -1,0 +1,121 @@
+{
+  "nodes": 25082,
+  "solid_elements": 19168,
+  "internal_radiation_facets": 6608,
+  "small_feature_divisions": 3,
+  "maximum_background_spacing_mm": 7.5,
+  "external_facets": 5152,
+  "volumes_m3": {
+    "panel5": 2.00000000000003e-05,
+    "panel1": 1.920000000000007e-05,
+    "panel3": 1.8432000000000185e-05,
+    "panel2": 1.9200000000000047e-05,
+    "frame": 2.6799999999999994e-05,
+    "bolts": 9.6e-06,
+    "panel4": 1.8432000000000158e-05,
+    "pcb1": 1.5968000000000183e-05,
+    "pcb2": 1.5968000000000126e-05,
+    "battery": 3.2400000000000056e-05,
+    "pcb3": 1.5968000000000126e-05,
+    "pcb4": 1.5968000000000095e-05,
+    "panel6": 2.0000000000000157e-05
+  },
+  "external_area_m2": {
+    "panel1": 0.010000000000000028,
+    "panel2": 0.010000000000000028,
+    "panel3": 0.010000000000000028,
+    "panel4": 0.010000000000000028,
+    "panel5": 0.009999999999999995,
+    "panel6": 0.009999999999999995
+  },
+  "mass_kg": 0.5784842399999964,
+  "shared_node_part_connections": {
+    "panel5": [
+      "bolts",
+      "frame",
+      "panel1",
+      "panel2",
+      "panel3",
+      "panel4"
+    ],
+    "panel1": [
+      "frame",
+      "panel3",
+      "panel4",
+      "panel5",
+      "panel6"
+    ],
+    "panel3": [
+      "frame",
+      "panel1",
+      "panel2",
+      "panel5",
+      "panel6"
+    ],
+    "panel2": [
+      "frame",
+      "panel3",
+      "panel4",
+      "panel5",
+      "panel6"
+    ],
+    "frame": [
+      "panel1",
+      "panel2",
+      "panel3",
+      "panel4",
+      "panel5",
+      "panel6",
+      "pcb1",
+      "pcb2",
+      "pcb3",
+      "pcb4"
+    ],
+    "bolts": [
+      "panel5",
+      "panel6",
+      "pcb1",
+      "pcb2",
+      "pcb3",
+      "pcb4"
+    ],
+    "panel4": [
+      "frame",
+      "panel1",
+      "panel2",
+      "panel5",
+      "panel6"
+    ],
+    "pcb1": [
+      "bolts",
+      "frame"
+    ],
+    "pcb2": [
+      "battery",
+      "bolts",
+      "frame"
+    ],
+    "battery": [
+      "pcb2"
+    ],
+    "pcb3": [
+      "bolts",
+      "frame"
+    ],
+    "pcb4": [
+      "bolts",
+      "frame"
+    ],
+    "panel6": [
+      "bolts",
+      "frame",
+      "panel1",
+      "panel2",
+      "panel3",
+      "panel4"
+    ]
+  },
+  "relative_heat_convergence_tolerance": 1e-08,
+  "internal_view_factor_adjustment": "closure and reciprocity, VFSM option 2",
+  "status": "geometry partition verified; solution not yet audited"
+}

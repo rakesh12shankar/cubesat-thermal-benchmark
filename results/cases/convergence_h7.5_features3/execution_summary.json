@@ -1,0 +1,15 @@
+{
+  "solver": "ANSYS MAPDL 2024 R1",
+  "log_source_case": "convergence_h7.5_features3",
+  "recorded_case": "convergence_h7.5_features3",
+  "solve": {
+    "error_count": 0,
+    "warning_count": 5,
+    "elapsed_seconds": 5710.0
+  },
+  "export": {
+    "error_count": 0,
+    "warning_count": 0,
+    "elapsed_seconds": 77.0
+  }
+}

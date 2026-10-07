@@ -1,0 +1,215 @@
+{
+  "result_steps": 1116,
+  "final_time_s": 11160.0,
+  "heat_capacity_J_K": 605.3914104,
+  "actual_material_properties": {
+    "1": {
+      "DENS": 2325.0,
+      "C": 1103.0,
+      "KXX": 1.03
+    },
+    "2": {
+      "DENS": 2810.0,
+      "C": 948.0,
+      "KXX": 140.0
+    },
+    "3": {
+      "DENS": 2120.0,
+      "C": 975.0,
+      "KXX": 0.64
+    },
+    "4": {
+      "DENS": 2247.0,
+      "C": 1110.0,
+      "KXX": 23.0
+    }
+  },
+  "last_orbit_periodicity_max_node_K": 0.0036694630000511097,
+  "phase_comparisons": 558,
+  "expected_phase_comparisons": 558,
+  "last_orbit_sampling_max_step_s": 10.0,
+  "periodicity_pass_0p1K": true,
+  "last_orbit_rms_energy_residual_W": 8.94334051559464e-07,
+  "last_orbit_rms_energy_residual_fraction_of_heat_throughput": 5.2585098578226944e-08,
+  "last_orbit_part_average_range_K": {
+    "battery": {
+      "min": 267.58039654178907,
+      "max": 275.3539547346485
+    },
+    "bolts": {
+      "min": 251.31540442596196,
+      "max": 282.91534543222565
+    },
+    "frame": {
+      "min": 245.5510380605665,
+      "max": 288.212767332627
+    },
+    "panel1": {
+      "min": 239.24021998117254,
+      "max": 313.4552078510082
+    },
+    "panel2": {
+      "min": 250.82511416524952,
+      "max": 286.9046081035709
+    },
+    "panel3": {
+      "min": 243.0365121127171,
+      "max": 301.5476255392649
+    },
+    "panel4": {
+      "min": 242.25767995116493,
+      "max": 322.86456351494206
+    },
+    "panel5": {
+      "min": 243.73587500577736,
+      "max": 276.27169969337336
+    },
+    "panel6": {
+      "min": 243.7427546355631,
+      "max": 276.2587587833698
+    },
+    "pcb1": {
+      "min": 257.98491391062186,
+      "max": 278.54384143926734
+    },
+    "pcb2": {
+      "min": 266.0140096154724,
+      "max": 276.46059453940416
+    },
+    "pcb3": {
+      "min": 261.1555168650652,
+      "max": 280.8831286367215
+    },
+    "pcb4": {
+      "min": 257.35418418963155,
+      "max": 279.14351181316334
+    }
+  },
+  "last_orbit_part_nodal_range_K": {
+    "battery": {
+      "minimum_K": 267.176653656,
+      "maximum_K": 275.597099272,
+      "maximum_simultaneous_spread_K": 0.8451381339999671
+    },
+    "bolts": {
+      "minimum_K": 247.741972322,
+      "maximum_K": 289.568203533,
+      "maximum_simultaneous_spread_K": 14.121017940999991
+    },
+    "frame": {
+      "minimum_K": 242.507794817,
+      "maximum_K": 299.755513285,
+      "maximum_simultaneous_spread_K": 22.13022110999998
+    },
+    "panel1": {
+      "minimum_K": 230.015609727,
+      "maximum_K": 345.713577552,
+      "maximum_simultaneous_spread_K": 60.06428331799998
+    },
+    "panel2": {
+      "minimum_K": 246.626338884,
+      "maximum_K": 299.025676129,
+      "maximum_simultaneous_spread_K": 21.302240550999954
+    },
+    "panel3": {
+      "minimum_K": 239.883400675,
+      "maximum_K": 337.360559588,
+      "maximum_simultaneous_spread_K": 68.00576257400002
+    },
+    "panel4": {
+      "minimum_K": 237.842792963,
+      "maximum_K": 355.617150455,
+      "maximum_simultaneous_spread_K": 64.17233613899998
+    },
+    "panel5": {
+      "minimum_K": 236.470716333,
+      "maximum_K": 297.818709819,
+      "maximum_simultaneous_spread_K": 39.589263389999985
+    },
+    "panel6": {
+      "minimum_K": 236.445753161,
+      "maximum_K": 297.824543852,
+      "maximum_simultaneous_spread_K": 39.626696047999985
+    },
+    "pcb1": {
+      "minimum_K": 242.909812895,
+      "maximum_K": 298.205711713,
+      "maximum_simultaneous_spread_K": 27.854312089000018
+    },
+    "pcb2": {
+      "minimum_K": 242.596898942,
+      "maximum_K": 299.435387635,
+      "maximum_simultaneous_spread_K": 27.988012620999996
+    },
+    "pcb3": {
+      "minimum_K": 242.590109658,
+      "maximum_K": 299.439021021,
+      "maximum_simultaneous_spread_K": 27.261801796999976
+    },
+    "pcb4": {
+      "minimum_K": 242.897232646,
+      "maximum_K": 298.211465274,
+      "maximum_simultaneous_spread_K": 28.337843724000038
+    }
+  },
+  "direct_journal_comparison": {
+    "panel1": {
+      "rmse_K": 8.245328614247144,
+      "max_abs_difference_K": 16.957567612311493,
+      "mean_bias_K": -5.757037692568199
+    },
+    "panel2": {
+      "rmse_K": 5.474533688286173,
+      "max_abs_difference_K": 7.1095735841321925,
+      "mean_bias_K": -5.353543860443155
+    },
+    "panel3": {
+      "rmse_K": 7.850057868610467,
+      "max_abs_difference_K": 17.108399434237867,
+      "mean_bias_K": -5.4049177981973155
+    },
+    "panel4": {
+      "rmse_K": 7.126610251440463,
+      "max_abs_difference_K": 16.452445824661595,
+      "mean_bias_K": -5.075070031053691
+    },
+    "panel5": {
+      "rmse_K": 2.252993815718824,
+      "max_abs_difference_K": 3.6250680299332885,
+      "mean_bias_K": 1.292687111326927
+    },
+    "panel6": {
+      "rmse_K": 1.7084887058399585,
+      "max_abs_difference_K": 2.6241730506632734,
+      "mean_bias_K": 0.4970624044970454
+    },
+    "pcb4": {
+      "rmse_K": 4.134738643244328,
+      "max_abs_difference_K": 6.253498659229308,
+      "mean_bias_K": -3.804186477349114
+    },
+    "pcb3": {
+      "rmse_K": 5.439841492592581,
+      "max_abs_difference_K": 8.051673306604698,
+      "mean_bias_K": -5.046331662637146
+    },
+    "pcb2": {
+      "rmse_K": 4.895088455222499,
+      "max_abs_difference_K": 7.282074833311356,
+      "mean_bias_K": -4.464556384082252
+    },
+    "pcb1": {
+      "rmse_K": 3.653465918031956,
+      "max_abs_difference_K": 5.651191215089511,
+      "mean_bias_K": -3.329670905573961
+    },
+    "battery": {
+      "rmse_K": 4.577423039507129,
+      "max_abs_difference_K": 5.925173498876859,
+      "mean_bias_K": -4.454153198767048
+    }
+  },
+  "pooled_journal_rmse_K": 5.421449865311748,
+  "export_note": "Streaming audit of recorded nodal history. Energy audit excludes unobserved gaps. Periodicity compares matching phases over the final half-open orbit (start,end].",
+  "validation_status": "Numerical comparison to journal curves, not experimental validation."
+}

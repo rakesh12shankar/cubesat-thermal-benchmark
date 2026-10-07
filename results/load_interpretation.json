@@ -1,0 +1,137 @@
+{
+  "comparison": {
+    "spectral_absorption": {
+      "panel1": {
+        "rmse_K": 6.929128348938694,
+        "maximum_absolute_error_K": 14.802372919595655,
+        "mean_bias_K": -3.5881307070482036
+      },
+      "panel2": {
+        "rmse_K": 3.7819314979728587,
+        "maximum_absolute_error_K": 5.373315854965256,
+        "mean_bias_K": -3.6002891793711487
+      },
+      "panel3": {
+        "rmse_K": 6.632795836105586,
+        "maximum_absolute_error_K": 15.085341135730005,
+        "mean_bias_K": -3.3831235229389485
+      },
+      "panel4": {
+        "rmse_K": 5.8238209350886185,
+        "maximum_absolute_error_K": 14.359205231321766,
+        "mean_bias_K": -3.032748975452541
+      },
+      "panel5": {
+        "rmse_K": 3.7621800657372244,
+        "maximum_absolute_error_K": 5.637560090368481,
+        "mean_bias_K": 3.2832429728663306
+      },
+      "panel6": {
+        "rmse_K": 2.971734548030327,
+        "maximum_absolute_error_K": 4.636557819737163,
+        "mean_bias_K": 2.487381365500171
+      },
+      "pcb4": {
+        "rmse_K": 2.449273106456072,
+        "maximum_absolute_error_K": 4.262256090355606,
+        "mean_bias_K": -1.8737686325257454
+      },
+      "pcb3": {
+        "rmse_K": 3.644068935788387,
+        "maximum_absolute_error_K": 5.989666579136383,
+        "mean_bias_K": -3.0623523971626576
+      },
+      "pcb2": {
+        "rmse_K": 3.192143615946796,
+        "maximum_absolute_error_K": 5.311953864679424,
+        "mean_bias_K": -2.4680896371039394
+      },
+      "pcb1": {
+        "rmse_K": 2.0166971860401124,
+        "maximum_absolute_error_K": 3.6463728295974533,
+        "mean_bias_K": -1.395641624780447
+      },
+      "battery": {
+        "rmse_K": 2.673649220183156,
+        "maximum_absolute_error_K": 3.9298088186657765,
+        "mean_bias_K": -2.4586467896808597
+      }
+    },
+    "equation_literal": {
+      "panel1": {
+        "rmse_K": 15.717212977977908,
+        "maximum_absolute_error_K": 19.402124130515915,
+        "mean_bias_K": 15.585413623478162
+      },
+      "panel2": {
+        "rmse_K": 16.622512256173422,
+        "maximum_absolute_error_K": 21.128260854013035,
+        "mean_bias_K": 16.327374797605724
+      },
+      "panel3": {
+        "rmse_K": 16.43723894792946,
+        "maximum_absolute_error_K": 20.89022907797772,
+        "mean_bias_K": 16.133908226108613
+      },
+      "panel4": {
+        "rmse_K": 16.791447281148667,
+        "maximum_absolute_error_K": 24.36095884127127,
+        "mean_bias_K": 16.130082001531843
+      },
+      "panel5": {
+        "rmse_K": 21.406102186418188,
+        "maximum_absolute_error_K": 26.49009895954623,
+        "mean_bias_K": 20.93921407469266
+      },
+      "panel6": {
+        "rmse_K": 20.58582250337318,
+        "maximum_absolute_error_K": 25.642189711353694,
+        "mean_bias_K": 20.14233358879992
+      },
+      "pcb4": {
+        "rmse_K": 17.78702618389578,
+        "maximum_absolute_error_K": 23.291592462489348,
+        "mean_bias_K": 17.267766359327517
+      },
+      "pcb3": {
+        "rmse_K": 17.28523117679481,
+        "maximum_absolute_error_K": 22.9401010233654,
+        "mean_bias_K": 16.73849738330033
+      },
+      "pcb2": {
+        "rmse_K": 17.52341857050474,
+        "maximum_absolute_error_K": 19.512786123124442,
+        "mean_bias_K": 17.459816045109612
+      },
+      "pcb1": {
+        "rmse_K": 18.19091411610073,
+        "maximum_absolute_error_K": 23.172575571487528,
+        "mean_bias_K": 17.778706879313035
+      },
+      "battery": {
+        "rmse_K": 17.706644235994105,
+        "maximum_absolute_error_K": 20.987818771919024,
+        "mean_bias_K": 17.55646800737439
+      }
+    }
+  },
+  "pooled_equal_part_weight_RMSE_K": {
+    "spectral_absorption": 4.305338411429505,
+    "equation_literal": 17.899044780665097
+  },
+  "audits": {
+    "spectral_absorption": {
+      "last_orbit_periodicity_max_node_K": 0.049252382000020134,
+      "periodicity_pass_1K": true,
+      "last_orbit_rms_energy_residual_W": 0.055398629741532146,
+      "last_orbit_rms_energy_residual_fraction_of_heat_throughput": 0.0032847876229851938
+    },
+    "equation_literal": {
+      "last_orbit_periodicity_max_node_K": 0.0025603969999679066,
+      "periodicity_pass_1K": true,
+      "last_orbit_rms_energy_residual_W": 0.07933615469159866,
+      "last_orbit_rms_energy_residual_fraction_of_heat_throughput": 0.0036026958786725977
+    }
+  },
+  "method": "No fitted parameters. Identical geometry, materials, orbital phase, internal/external emissivity and radiation divisions. Only incident absorption weighting differs. Both runs are compared on the original journal 10 s time grid."
+}

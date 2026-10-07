@@ -1,0 +1,86 @@
+{
+  "result_steps": 1395,
+  "final_time_s": 27900.0,
+  "temperature_min_K": 237.939859678,
+  "temperature_max_K": 352.812533856,
+  "heat_capacity_J_K": 605.3914104,
+  "maximum_discrete_energy_residual_J": 5.203127861107191,
+  "maximum_relative_energy_residual": 1.5629536866881844,
+  "rms_energy_residual_W": 0.07373811072771395,
+  "final_part_average_K": {
+    "battery": 268.35573806361725,
+    "bolts": 274.00113255560643,
+    "frame": 279.2239146579148,
+    "panel1": 304.5349969346959,
+    "panel2": 279.2972775171274,
+    "panel3": 288.02210436346564,
+    "panel4": 265.9870283013893,
+    "panel5": 269.818436903071,
+    "panel6": 269.6073626288459,
+    "pcb1": 269.0212715716264,
+    "pcb2": 270.3526068119994,
+    "pcb3": 271.2787073047066,
+    "pcb4": 268.550453524384
+  },
+  "validation_status": "Recorded solver/conservation audit; direct journal comparison is reported separately.",
+  "last_orbit_part_average_range_K": {
+    "battery": {
+      "min": 266.7106812917891,
+      "max": 280.3519861909922
+    },
+    "bolts": {
+      "min": 253.29842987732852,
+      "max": 286.39180719312367
+    },
+    "frame": {
+      "min": 248.9184424020331,
+      "max": 289.8158071758272
+    },
+    "panel1": {
+      "min": 244.15053793948294,
+      "max": 310.65061672415226
+    },
+    "panel2": {
+      "min": 253.82654656339096,
+      "max": 288.31538758984635
+    },
+    "panel3": {
+      "min": 247.471294088362,
+      "max": 299.25982551926586
+    },
+    "panel4": {
+      "min": 246.42877790687592,
+      "max": 319.679382368244
+    },
+    "panel5": {
+      "min": 248.04767089241778,
+      "max": 279.41405527255944
+    },
+    "panel6": {
+      "min": 247.86094100318235,
+      "max": 279.567662432894
+    },
+    "pcb1": {
+      "min": 258.07506867400133,
+      "max": 281.8968846672729
+    },
+    "pcb2": {
+      "min": 265.487156174565,
+      "max": 281.5984508187486
+    },
+    "pcb3": {
+      "min": 260.8822261116821,
+      "max": 285.0567528702168
+    },
+    "pcb4": {
+      "min": 256.4296879942305,
+      "max": 283.2622217193783
+    }
+  },
+  "last_orbit_rms_energy_residual_W": 0.0775386968034374,
+  "last_orbit_rms_energy_residual_fraction_of_heat_throughput": 0.004585404348552776,
+  "energy_residual_note": "Relative step error is ill-conditioned when net stored-energy change approaches zero; use RMS power residual and heat-throughput normalization.",
+  "last_orbit_periodicity_max_node_K": 0.9332837989999803,
+  "periodicity_pass_1K": true,
+  "source_case": "orbital_h15_e1_warm"
+}

@@ -1,0 +1,117 @@
+{
+  "nodes": 4093,
+  "solid_elements": 2192,
+  "internal_radiation_facets": 2352,
+  "external_facets": 1408,
+  "volumes_m3": {
+    "panel5": 2.0000000000000032e-05,
+    "panel1": 1.9200000000000026e-05,
+    "panel3": 1.843200000000002e-05,
+    "panel2": 1.9200000000000026e-05,
+    "frame": 2.6800000000000018e-05,
+    "bolts": 9.599999999999998e-06,
+    "panel4": 1.843200000000002e-05,
+    "pcb1": 1.5968000000000004e-05,
+    "pcb2": 1.5968000000000004e-05,
+    "battery": 3.2400000000000015e-05,
+    "pcb3": 1.5968000000000004e-05,
+    "pcb4": 1.5968000000000004e-05,
+    "panel6": 2.0000000000000032e-05
+  },
+  "external_area_m2": {
+    "panel1": 0.010000000000000014,
+    "panel2": 0.010000000000000014,
+    "panel3": 0.010000000000000014,
+    "panel4": 0.010000000000000014,
+    "panel5": 0.010000000000000021,
+    "panel6": 0.010000000000000021
+  },
+  "mass_kg": 0.578484239999998,
+  "shared_node_part_connections": {
+    "panel5": [
+      "bolts",
+      "frame",
+      "panel1",
+      "panel2",
+      "panel3",
+      "panel4"
+    ],
+    "panel1": [
+      "frame",
+      "panel3",
+      "panel4",
+      "panel5",
+      "panel6"
+    ],
+    "panel3": [
+      "frame",
+      "panel1",
+      "panel2",
+      "panel5",
+      "panel6"
+    ],
+    "frame": [
+      "panel1",
+      "panel2",
+      "panel3",
+      "panel4",
+      "panel5",
+      "panel6",
+      "pcb1",
+      "pcb2",
+      "pcb3",
+      "pcb4"
+    ],
+    "panel2": [
+      "frame",
+      "panel3",
+      "panel4",
+      "panel5",
+      "panel6"
+    ],
+    "bolts": [
+      "panel5",
+      "panel6",
+      "pcb1",
+      "pcb2",
+      "pcb3",
+      "pcb4"
+    ],
+    "panel4": [
+      "frame",
+      "panel1",
+      "panel2",
+      "panel5",
+      "panel6"
+    ],
+    "pcb1": [
+      "bolts",
+      "frame"
+    ],
+    "pcb2": [
+      "battery",
+      "bolts",
+      "frame"
+    ],
+    "battery": [
+      "pcb2"
+    ],
+    "pcb3": [
+      "bolts",
+      "frame"
+    ],
+    "pcb4": [
+      "bolts",
+      "frame"
+    ],
+    "panel6": [
+      "bolts",
+      "frame",
+      "panel1",
+      "panel2",
+      "panel3",
+      "panel4"
+    ]
+  },
+  "status": "geometry partition verified; solution not yet audited"
+}

@@ -1,0 +1,15 @@
+{
+  "solver": "ANSYS MAPDL 2024 R1",
+  "log_source_case": "uncertainty_external_epsilon_high_extend_extend",
+  "recorded_case": "uncertainty_external_epsilon_high_extend_extend",
+  "solve": {
+    "error_count": 0,
+    "warning_count": 3,
+    "elapsed_seconds": 483.0
+  },
+  "export": {
+    "error_count": 0,
+    "warning_count": 0,
+    "elapsed_seconds": 15.0
+  }
+}

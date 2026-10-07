@@ -1,0 +1,78 @@
+{
+  "original": {
+    "periodicity_max_node_K": 0.049252382000020134,
+    "periodicity_pass_1K": true,
+    "rms_energy_residual_W": 0.055398629741532146,
+    "rms_energy_residual_fraction_of_throughput": 0.0032847876229851938,
+    "journal_rmse_K": {
+      "panel1": 6.929128348938694,
+      "panel2": 3.7819314979728587,
+      "panel3": 6.632795836105586,
+      "panel4": 5.8238209350886185,
+      "panel5": 3.7621800657372244,
+      "panel6": 2.971734548030327,
+      "pcb4": 2.449273106456072,
+      "pcb3": 3.644068935788387,
+      "pcb2": 3.192143615946796,
+      "pcb1": 2.0166971860401124,
+      "battery": 2.673649220183156
+    }
+  },
+  "balanced": {
+    "periodicity_max_node_K": 0.30139346499998965,
+    "periodicity_pass_1K": true,
+    "rms_energy_residual_W": 0.009713358903942268,
+    "rms_energy_residual_fraction_of_throughput": 0.000575602395057906,
+    "journal_rmse_K": {
+      "panel1": 6.867420435164665,
+      "panel2": 3.7341104335247346,
+      "panel3": 6.607254390081754,
+      "panel4": 5.729306749191496,
+      "panel5": 3.8375588726329357,
+      "panel6": 3.0475686008834404,
+      "pcb4": 2.403595426261736,
+      "pcb3": 3.611555062328952,
+      "pcb2": 3.12277329427155,
+      "pcb1": 1.9910757501703662,
+      "battery": 2.6105701826939196
+    },
+    "maximum_part_average_change_from_original_K": 0.2806603136301078
+  },
+  "balanced_strict": {
+    "periodicity_max_node_K": 0.30846522699999923,
+    "periodicity_pass_1K": true,
+    "rms_energy_residual_W": 9.520168603143898e-07,
+    "rms_energy_residual_fraction_of_throughput": 5.6410996623849646e-08,
+    "journal_rmse_K": {
+      "panel1": 6.871941254744393,
+      "panel2": 3.7349235488696206,
+      "panel3": 6.619268511571975,
+      "panel4": 5.744924161734832,
+      "panel5": 3.8379515147435947,
+      "panel6": 3.0487952550778386,
+      "pcb4": 2.437949156015187,
+      "pcb3": 3.639201558126989,
+      "pcb2": 3.1130656998651953,
+      "pcb1": 2.020733385653228,
+      "battery": 2.620687513857119
+    },
+    "maximum_part_average_change_from_original_K": 0.3283768959225881
+  },
+  "analytical_internal_check": {
+    "description": "Six separate equal-capacity walls, each 20 J/K; epsilon .5; closed 100 mm cubic enclosure; initial wall temperatures [400,300,300,300,300,300] K. Outer faces adiabatic; no conduction between walls. Exact total stored energy and mean temperature are constant. This verifies gray internal radiation conservation/equilibration, not detailed CubeSat view factors.",
+    "exact_capacity_weighted_mean_K": 316.6666666666667,
+    "maximum_mean_temperature_drift_K": 9.543333021611033e-07,
+    "maximum_total_energy_drift_J": 0.0001145199962593324,
+    "final_wall_average_temperatures_K": [
+      342.2730476745,
+      312.16762259250004,
+      311.384199074,
+      311.384198309,
+      311.39546951349996,
+      311.3954685625
+    ],
+    "final_to_initial_wall_temperature_variance_ratio": 0.09447697567174343,
+    "solver_errors": 0,
+    "pass": true
+  }
+}

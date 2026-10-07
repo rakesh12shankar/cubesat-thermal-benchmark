@@ -1,0 +1,11 @@
+{
+  "label": "bonded_control",
+  "duration_s": 11160,
+  "dt_max_s": 10,
+  "source_phase_zero": "balanced_strict final time 11160 s",
+  "split_original_nodes": 0,
+  "nodes": 4093,
+  "retained_alternate_path_junctions": 0,
+  "interpretation": "Zero direct conductance limiting diagnostic, not recovered author interfaces. Alternate connections at junctions retained; surfaces are coincident and sealed, so no new radiation is introduced.",
+  "control": "Same element geometry, properties, exterior loads, radiation facets, numerical settings and mapped initial field. Bonded control uses identical original connectivity."
+}

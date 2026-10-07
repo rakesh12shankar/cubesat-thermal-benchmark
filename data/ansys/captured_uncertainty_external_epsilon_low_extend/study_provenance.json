@@ -1,0 +1,14 @@
+{
+  "dt_s": 10,
+  "cycles": 2,
+  "settling_cycles": 0,
+  "duration_s": 11160,
+  "recorded_cycles": 2,
+  "radiosity_solver": 2,
+  "changes": {
+    "external_epsilon": 0.69
+  },
+  "input_uncertainty_note": "Scenario ranges are declared engineering assumptions, not measured probability bounds.",
+  "seed_source": "uncertainty_external_epsilon_low",
+  "seed_method": "Stored phase-zero field; optical scenarios use declared mean-radiation balance scaling for startup only"
+}

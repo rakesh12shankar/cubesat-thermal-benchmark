@@ -1,0 +1,13 @@
+{
+  "label": "pcb_frame_off",
+  "duration_s": 11160,
+  "dt_max_s": 10,
+  "source_phase_zero": "balanced_strict final time 11160 s",
+  "split_original_nodes": 96,
+  "nodes": 4189,
+  "retained_alternate_path_junctions": 0,
+  "interpretation": "Zero direct conductance limiting diagnostic, not recovered author interfaces. Alternate connections at junctions retained; surfaces are coincident and sealed, so no new radiation is introduced.",
+  "control": "Same element geometry, properties, exterior loads, radiation facets, numerical settings and mapped initial field. Bonded control uses identical original connectivity.",
+  "initial_state_source": "interface_pcb_frame_off_settled final phase-zero state",
+  "extension": "Two additional fully resolved 10 s orbits after the six warm-up and two resolved-orbit extension; comparison uses final orbit only."
+}

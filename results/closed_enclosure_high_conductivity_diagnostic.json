@@ -1,0 +1,17 @@
+{
+  "description": "Six separate equal-capacity walls, each 20 J/K; epsilon .5; closed 100 mm cubic enclosure; initial wall temperatures [400,300,300,300,300,300] K. Outer faces adiabatic; no conduction between walls. Exact total stored energy and mean temperature are constant. This verifies gray internal radiation conservation/equilibration, not detailed CubeSat view factors.",
+  "exact_capacity_weighted_mean_K": 316.6666666666667,
+  "maximum_mean_temperature_drift_K": 0.005302638916646174,
+  "maximum_total_energy_drift_J": 0.6363166699975409,
+  "final_wall_average_temperatures_K": [
+    342.25917622500003,
+    312.178181915,
+    311.392966869,
+    311.3929661005,
+    311.404262837,
+    311.404261887
+  ],
+  "final_to_initial_wall_temperature_variance_ratio": 0.09433589970005964,
+  "solver_errors": 0,
+  "pass": false
+}

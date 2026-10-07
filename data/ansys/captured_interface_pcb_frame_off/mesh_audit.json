@@ -1,0 +1,42 @@
+{
+  "nodes": 4189,
+  "solid_elements": 2192,
+  "internal_radiation_facets": 2352,
+  "external_facets": 1408,
+  "volumes_m3": {
+    "panel5": 2.0000000000000032e-05,
+    "panel1": 1.9200000000000026e-05,
+    "panel3": 1.843200000000002e-05,
+    "panel2": 1.9200000000000026e-05,
+    "frame": 2.6800000000000018e-05,
+    "bolts": 9.599999999999998e-06,
+    "panel4": 1.843200000000002e-05,
+    "pcb1": 1.5968000000000004e-05,
+    "pcb2": 1.5968000000000004e-05,
+    "battery": 3.2400000000000015e-05,
+    "pcb3": 1.5968000000000004e-05,
+    "pcb4": 1.5968000000000004e-05,
+    "panel6": 2.0000000000000032e-05
+  },
+  "external_area_m2": {
+    "panel1": 0.010000000000000014,
+    "panel2": 0.010000000000000014,
+    "panel3": 0.010000000000000014,
+    "panel4": 0.010000000000000014,
+    "panel5": 0.010000000000000021,
+    "panel6": 0.010000000000000021
+  },
+  "mass_kg": 0.578484239999998,
+  "status": "Element geometry preserved; interface nodes partitioned as documented.",
+  "interface_provenance": {
+    "label": "pcb_frame_off",
+    "duration_s": 11160,
+    "dt_max_s": 10,
+    "source_phase_zero": "balanced_strict final time 11160 s",
+    "split_original_nodes": 96,
+    "nodes": 4189,
+    "retained_alternate_path_junctions": 0,
+    "interpretation": "Zero direct conductance limiting diagnostic, not recovered author interfaces. Alternate connections at junctions retained; surfaces are coincident and sealed, so no new radiation is introduced.",
+    "control": "Same element geometry, properties, exterior loads, radiation facets, numerical settings and mapped initial field. Bonded control uses identical original connectivity."
+  }
+}

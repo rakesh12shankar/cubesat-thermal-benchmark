@@ -1,0 +1,1766 @@
+{
+  "selection": {
+    "spatial": [
+      "convergence_h15_features1",
+      "convergence_h10_features2",
+      "convergence_h7.5_features3"
+    ],
+    "temporal": [
+      "convergence_h15_features1",
+      "convergence_dt5_extend",
+      "convergence_dt2.5"
+    ],
+    "angular": [
+      "convergence_h15_features1",
+      "convergence_hemicube40",
+      "convergence_hemicube80"
+    ],
+    "uncertainty_control": "convergence_h15_features1",
+    "uncertainty": {
+      "alpha": {
+        "low": "uncertainty_alpha_low_extend",
+        "high": "uncertainty_alpha_high_extend"
+      },
+      "external_epsilon": {
+        "low": "uncertainty_external_epsilon_low_extend",
+        "high": "uncertainty_external_epsilon_high_extend_extend"
+      },
+      "internal_epsilon": {
+        "low": "uncertainty_internal_epsilon_low_extend",
+        "high": "uncertainty_internal_epsilon_high"
+      },
+      "capacity_scale": {
+        "low": "uncertainty_capacity_scale_low_extend_extend",
+        "high": "uncertainty_capacity_scale_high_extend"
+      },
+      "panel_k": {
+        "low": "uncertainty_panel_k_low_extend",
+        "high": "uncertainty_panel_k_high_extend"
+      },
+      "pcb_k": {
+        "low": "uncertainty_pcb_k_low_extend",
+        "high": "uncertainty_pcb_k_high_extend"
+      }
+    },
+    "joint_checks": [
+      {
+        "case": "uncertainty_joint_peak_hot_extend",
+        "normalized_inputs": {
+          "alpha": 1,
+          "external_epsilon": -1,
+          "internal_epsilon": 1,
+          "capacity_scale": -1,
+          "panel_k": -1,
+          "pcb_k": 1
+        },
+        "design_phase_s": 2310.0
+      },
+      {
+        "case": "uncertainty_joint_peak_cold_extend",
+        "normalized_inputs": {
+          "alpha": -1,
+          "external_epsilon": 1,
+          "internal_epsilon": -1,
+          "capacity_scale": 1,
+          "panel_k": 1,
+          "pcb_k": -1
+        },
+        "design_phase_s": 2310.0
+      }
+    ],
+    "numerical_resolution_note": "Paired screening uses the original mesh, 10 s steps and hemicube resolution 20. Solid-mesh, time-step and angular-resolution discrepancies are reported independently; fine-mesh transfer of sensitivities requires a separate cross-check before claiming resolution-independent input bands."
+  },
+  "convergence": {
+    "spatial": {
+      "cases": [
+        {
+          "case": "convergence_h15_features1",
+          "nodes": 4093,
+          "elements": 2192,
+          "periodicity_K": 0.006874740999990081,
+          "periodicity_pass": true,
+          "energy_residual_W": 9.515202632043089e-07,
+          "journal_rmse_K": 4.280532684151599
+        },
+        {
+          "case": "convergence_h10_features2",
+          "nodes": 12171,
+          "elements": 8348,
+          "periodicity_K": 0.00833387400001584,
+          "periodicity_pass": true,
+          "energy_residual_W": 1.0927053252090808e-06,
+          "journal_rmse_K": 4.1105165747968515
+        },
+        {
+          "case": "convergence_h7.5_features3",
+          "nodes": 25082,
+          "elements": 19168,
+          "periodicity_K": 0.00585911500002112,
+          "periodicity_pass": true,
+          "energy_residual_W": 1.1161051371411361e-06,
+          "journal_rmse_K": 4.087728180209737
+        }
+      ],
+      "adjacent_comparisons": [
+        {
+          "cases": [
+            "convergence_h15_features1",
+            "convergence_h10_features2"
+          ],
+          "maximum_component_average_curve_difference_K": 0.8899167189769628,
+          "by_part_K": {
+            "battery": 0.13575554185410965,
+            "bolts": 0.20169422829934547,
+            "frame": 0.21195853786821317,
+            "panel1": 0.7144921636333947,
+            "panel2": 0.19638552344639493,
+            "panel3": 0.8899167189769628,
+            "panel4": 0.818173359883076,
+            "panel5": 0.3089913462687264,
+            "panel6": 0.3078294097057892,
+            "pcb1": 0.12551558405766627,
+            "pcb2": 0.10434630977499637,
+            "pcb3": 0.16588240362068518,
+            "pcb4": 0.12971858089736088
+          },
+          "battery_nodal_minimum_difference_K": 0.10334938400001192,
+          "battery_nodal_maximum_difference_K": 0.013058419000003596,
+          "pcb_maximum_spread_differences_K": {
+            "pcb1": 0.08991343999997525,
+            "pcb2": 0.2378273610000292,
+            "pcb3": 0.14714550700000473,
+            "pcb4": 0.03424339499997586
+          },
+          "analyst_screening_targets_pass": false
+        },
+        {
+          "cases": [
+            "convergence_h10_features2",
+            "convergence_h7.5_features3"
+          ],
+          "maximum_component_average_curve_difference_K": 0.06932074944091937,
+          "by_part_K": {
+            "battery": 0.0629971472105808,
+            "bolts": 0.028854582899100478,
+            "frame": 0.020926235244559166,
+            "panel1": 0.05456055581561259,
+            "panel2": 0.023202961113099718,
+            "panel3": 0.048796202093853935,
+            "panel4": 0.060046219442369875,
+            "panel5": 0.051152248929327016,
+            "panel6": 0.05041574112493663,
+            "pcb1": 0.03753967918316903,
+            "pcb2": 0.04812524609627644,
+            "pcb3": 0.06932074944091937,
+            "pcb4": 0.047057667666763336
+          },
+          "battery_nodal_minimum_difference_K": 0.0009969260000275426,
+          "battery_nodal_maximum_difference_K": 0.03482238700001972,
+          "pcb_maximum_spread_differences_K": {
+            "pcb1": 0.07710124700003007,
+            "pcb2": 0.007684920999963651,
+            "pcb3": 0.1341066269999942,
+            "pcb4": 0.06350155100000165
+          },
+          "analyst_screening_targets_pass": true
+        }
+      ]
+    },
+    "temporal": {
+      "cases": [
+        {
+          "case": "convergence_h15_features1",
+          "nodes": 4093,
+          "elements": 2192,
+          "periodicity_K": 0.006874740999990081,
+          "periodicity_pass": true,
+          "energy_residual_W": 9.515202632043089e-07,
+          "journal_rmse_K": 4.280532684151599
+        },
+        {
+          "case": "convergence_dt5_extend",
+          "nodes": 4093,
+          "elements": 2192,
+          "periodicity_K": 0.0022273569999811116,
+          "periodicity_pass": true,
+          "energy_residual_W": 5.117798452560998e-07,
+          "journal_rmse_K": 4.275788025260646
+        },
+        {
+          "case": "convergence_dt2.5",
+          "nodes": 4093,
+          "elements": 2192,
+          "periodicity_K": 0.05468410200001017,
+          "periodicity_pass": true,
+          "energy_residual_W": 5.076255431861448e-07,
+          "journal_rmse_K": 4.273243455191439
+        }
+      ],
+      "adjacent_comparisons": [
+        {
+          "cases": [
+            "convergence_h15_features1",
+            "convergence_dt5_extend"
+          ],
+          "maximum_component_average_curve_difference_K": 0.42029552352391875,
+          "by_part_K": {
+            "battery": 0.023546744945349474,
+            "bolts": 0.06048922393574685,
+            "frame": 0.08943844751325969,
+            "panel1": 0.11409214743395069,
+            "panel2": 0.1470838589232244,
+            "panel3": 0.37586547792022884,
+            "panel4": 0.42029552352391875,
+            "panel5": 0.05567508693454215,
+            "panel6": 0.05570724131442262,
+            "pcb1": 0.043811619986001915,
+            "pcb2": 0.020954389815756258,
+            "pcb3": 0.04161236845948224,
+            "pcb4": 0.04838620338500732
+          },
+          "battery_nodal_minimum_difference_K": 0.0065313549999928,
+          "battery_nodal_maximum_difference_K": 0.010192976000041654,
+          "pcb_maximum_spread_differences_K": {
+            "pcb1": 0.042564821999974356,
+            "pcb2": 0.038475584999957846,
+            "pcb3": 0.04963306100000864,
+            "pcb4": 0.04862847999999076
+          },
+          "analyst_screening_targets_pass": false
+        },
+        {
+          "cases": [
+            "convergence_dt5_extend",
+            "convergence_dt2.5"
+          ],
+          "maximum_component_average_curve_difference_K": 0.21160309764934482,
+          "by_part_K": {
+            "battery": 0.012906012949315482,
+            "bolts": 0.03097149156269552,
+            "frame": 0.045615011924383,
+            "panel1": 0.05682625040014955,
+            "panel2": 0.07325708815704957,
+            "panel3": 0.18829795099210855,
+            "panel4": 0.21160309764934482,
+            "panel5": 0.027590292665991,
+            "panel6": 0.02761644354859527,
+            "pcb1": 0.02234567743482785,
+            "pcb2": 0.011552948294252019,
+            "pcb3": 0.021754893099910078,
+            "pcb4": 0.02409216699999206
+          },
+          "battery_nodal_minimum_difference_K": 0.0024395290000143177,
+          "battery_nodal_maximum_difference_K": 0.006564008999987436,
+          "pcb_maximum_spread_differences_K": {
+            "pcb1": 0.020744456000045375,
+            "pcb2": 0.018155363000062152,
+            "pcb3": 0.02413106599999537,
+            "pcb4": 0.023830060000022968
+          },
+          "analyst_screening_targets_pass": true
+        }
+      ],
+      "observed_order_diagnostics": {
+        "battery": {
+          "coarse_medium_rms_difference_K": 0.015248737575164702,
+          "medium_fine_rms_difference_K": 0.007801039376683504,
+          "observed_order_for_halved_steps": 0.9669515482842947
+        },
+        "bolts": {
+          "coarse_medium_rms_difference_K": 0.03355605586181509,
+          "medium_fine_rms_difference_K": 0.016850382471679526,
+          "observed_order_for_halved_steps": 0.9937918148977627
+        },
+        "frame": {
+          "coarse_medium_rms_difference_K": 0.03541869954662365,
+          "medium_fine_rms_difference_K": 0.01776105733250975,
+          "observed_order_for_halved_steps": 0.9957937729977953
+        },
+        "panel1": {
+          "coarse_medium_rms_difference_K": 0.04639006636762809,
+          "medium_fine_rms_difference_K": 0.02330902972027036,
+          "observed_order_for_halved_steps": 0.9929269591957253
+        },
+        "panel2": {
+          "coarse_medium_rms_difference_K": 0.03619778117862219,
+          "medium_fine_rms_difference_K": 0.018191370017392485,
+          "observed_order_for_halved_steps": 0.9926470684500248
+        },
+        "panel3": {
+          "coarse_medium_rms_difference_K": 0.0557632352242474,
+          "medium_fine_rms_difference_K": 0.02805044742453265,
+          "observed_order_for_halved_steps": 0.9912904816691166
+        },
+        "panel4": {
+          "coarse_medium_rms_difference_K": 0.06468908115632999,
+          "medium_fine_rms_difference_K": 0.03247421006835917,
+          "observed_order_for_halved_steps": 0.9942277881586151
+        },
+        "panel5": {
+          "coarse_medium_rms_difference_K": 0.031780287001946086,
+          "medium_fine_rms_difference_K": 0.015942630125679178,
+          "observed_order_for_halved_steps": 0.995242496762319
+        },
+        "panel6": {
+          "coarse_medium_rms_difference_K": 0.03185389581215261,
+          "medium_fine_rms_difference_K": 0.01597812411120822,
+          "observed_order_for_halved_steps": 0.995371787869025
+        },
+        "pcb1": {
+          "coarse_medium_rms_difference_K": 0.029411552797473567,
+          "medium_fine_rms_difference_K": 0.014730805803965092,
+          "observed_order_for_halved_steps": 0.9975466032535399
+        },
+        "pcb2": {
+          "coarse_medium_rms_difference_K": 0.014725240148867846,
+          "medium_fine_rms_difference_K": 0.0075426581137177555,
+          "observed_order_for_halved_steps": 0.965146223224637
+        },
+        "pcb3": {
+          "coarse_medium_rms_difference_K": 0.02803311113912096,
+          "medium_fine_rms_difference_K": 0.01404979241101736,
+          "observed_order_for_halved_steps": 0.9965830503638766
+        },
+        "pcb4": {
+          "coarse_medium_rms_difference_K": 0.03282686631225419,
+          "medium_fine_rms_difference_K": 0.016409216493319688,
+          "observed_order_for_halved_steps": 1.0003706805282198
+        }
+      }
+    },
+    "angular": {
+      "cases": [
+        {
+          "case": "convergence_h15_features1",
+          "nodes": 4093,
+          "elements": 2192,
+          "periodicity_K": 0.006874740999990081,
+          "periodicity_pass": true,
+          "energy_residual_W": 9.515202632043089e-07,
+          "journal_rmse_K": 4.280532684151599
+        },
+        {
+          "case": "convergence_hemicube40",
+          "nodes": 4093,
+          "elements": 2192,
+          "periodicity_K": 0.0002904010000293056,
+          "periodicity_pass": true,
+          "energy_residual_W": 1.1271031383424193e-06,
+          "journal_rmse_K": 4.279699336349116
+        },
+        {
+          "case": "convergence_hemicube80",
+          "nodes": 4093,
+          "elements": 2192,
+          "periodicity_K": 0.00015327599999181984,
+          "periodicity_pass": true,
+          "energy_residual_W": 1.0755777976565794e-06,
+          "journal_rmse_K": 4.279616793036226
+        }
+      ],
+      "adjacent_comparisons": [
+        {
+          "cases": [
+            "convergence_h15_features1",
+            "convergence_hemicube40"
+          ],
+          "maximum_component_average_curve_difference_K": 0.004901626711614426,
+          "by_part_K": {
+            "battery": 0.002754428406262832,
+            "bolts": 0.004901626711614426,
+            "frame": 0.002014954626815779,
+            "panel1": 0.0042949066988740014,
+            "panel2": 0.0040750177141148924,
+            "panel3": 0.004435753320308322,
+            "panel4": 0.003961399596846604,
+            "panel5": 0.0005583047894788251,
+            "panel6": 0.001802582337631975,
+            "pcb1": 0.004515045589755573,
+            "pcb2": 0.0029595612214166067,
+            "pcb3": 0.0037129725318436613,
+            "pcb4": 0.0030735466071405426
+          },
+          "battery_nodal_minimum_difference_K": 0.0013858130000130586,
+          "battery_nodal_maximum_difference_K": 0.0009478590000071563,
+          "pcb_maximum_spread_differences_K": {
+            "pcb1": 0.022702061000018148,
+            "pcb2": 0.0022513619999813272,
+            "pcb3": 0.017654437000032885,
+            "pcb4": 0.0061565219999693
+          },
+          "analyst_screening_targets_pass": true
+        },
+        {
+          "cases": [
+            "convergence_hemicube40",
+            "convergence_hemicube80"
+          ],
+          "maximum_component_average_curve_difference_K": 0.0015869470465190716,
+          "by_part_K": {
+            "battery": 0.0007055476640402958,
+            "bolts": 0.0006959558772905439,
+            "frame": 0.00023284189381911347,
+            "panel1": 0.0002601028389790372,
+            "panel2": 0.0014579425115925915,
+            "panel3": 0.0010850965746840302,
+            "panel4": 0.0012216189848004433,
+            "panel5": 0.00033000137511862704,
+            "panel6": 0.00012985518694108578,
+            "pcb1": 0.0015869470465190716,
+            "pcb2": 0.0006005320641975231,
+            "pcb3": 0.0007601233564855647,
+            "pcb4": 0.0013987953824425858
+          },
+          "battery_nodal_minimum_difference_K": 0.00020313200002419762,
+          "battery_nodal_maximum_difference_K": 0.000806176000025971,
+          "pcb_maximum_spread_differences_K": {
+            "pcb1": 0.00215595700007043,
+            "pcb2": 0.000533052999969641,
+            "pcb3": 0.0025015719999714747,
+            "pcb4": 0.005423769000060474
+          },
+          "analyst_screening_targets_pass": true
+        }
+      ]
+    }
+  },
+  "input_uncertainty": {
+    "assumptions": {
+      "joint_initial_state_note": "Combined-input cases start from a phase-zero affine combination of the qualified endpoint nodal fields. This is an initialization guess only; all reported joint results come from full nonlinear ANSYS runs with independently checked final periodicity. Chosen before observing joint-case results.",
+      "purpose": "Assumption-based input uncertainty screening of the reconstructed model; not experimental validation or a statistical explanation of the source-paper discrepancy.",
+      "range_basis": "The paper supplies nominal constants, not uncertainty intervals. All half-widths below are analyst-declared engineering assumptions, fixed before the scenario results.",
+      "distribution_assumption": "Independent uniform normalized inputs on [-1,1]; capacity_scale is one correlated multiplier on all material heat capacities. No measured probabilities are claimed.",
+      "factors": {
+        "alpha": {
+          "nominal": 0.77,
+          "half_width": 0.03,
+          "units": "dimensionless",
+          "scope": "solar and albedo absorptivity"
+        },
+        "external_epsilon": {
+          "nominal": 0.72,
+          "half_width": 0.03,
+          "units": "dimensionless",
+          "scope": "exterior thermal emission and Earth-IR absorption together"
+        },
+        "internal_epsilon": {
+          "nominal": 0.5,
+          "half_width": 0.05,
+          "units": "dimensionless",
+          "scope": "all internal radiating faces"
+        },
+        "capacity_scale": {
+          "nominal": 1.0,
+          "half_width": 0.1,
+          "units": "multiplier",
+          "scope": "all specific heat capacities; density and geometry fixed"
+        },
+        "panel_k": {
+          "nominal": 1.03,
+          "half_width": 0.206,
+          "units": "W/(m K)",
+          "scope": "panel thermal conductivity"
+        },
+        "pcb_k": {
+          "nominal": 0.64,
+          "half_width": 0.128,
+          "units": "W/(m K)",
+          "scope": "PCB thermal conductivity"
+        }
+      },
+      "method": "Paired full-ANSYS endpoint scenarios, local central-difference response propagation and midpoint-curvature checks. Numerical resolution effects are reported separately and are not disguised as physical input uncertainty.",
+      "exclusions": [
+        "geometry and mass measurement uncertainty",
+        "finite contact-conductance distributions",
+        "orbital beta, attitude and ephemeris uncertainty",
+        "temperature-dependent or nongray property laws",
+        "model-form disagreement with the source solver"
+      ],
+      "periodicity_target_K": 0.01,
+      "reproducibility_seed": 20261007,
+      "propagation_draws": 10000,
+      "joint_check_design": "After paired screening, choose the high/low endpoint of each factor that raises battery average at the nominal battery-peak phase. Solve that combined corner and its opposite with full nonlinear ANSYS. These check the affine approximation; they are not reference-data fits.",
+      "curvature_interpretation": "Midpoint deviations are compared with the magnitude of input responses. Orbital periodicity defects and numerical-resolution changes limit interpretation of small curvature values.",
+      "initial_screening_periodicity_target_K": 0.1,
+      "periodicity_tightening_basis": "Tightened from 0.1 K after observing the capacity_scale=0.9 cycle defect of 0.0756 K. Smaller sensitivities and curvature checks require lower residual drift. This changes numerical qualification only; all physical ranges and nominal values remain fixed."
+    },
+    "control_case": "convergence_h15_features1",
+    "endpoint_checks": [
+      {
+        "factor": "alpha",
+        "low_case": "uncertainty_alpha_low_extend",
+        "high_case": "uncertainty_alpha_high_extend",
+        "maximum_half_range_average_curve_K": 3.4361371807231933,
+        "maximum_midpoint_curvature_K": 0.0395345329304746,
+        "maximum_battery_half_range_K": 2.2336233238398506,
+        "nodal_metrics": {
+          "battery": {
+            "minimum_K": {
+              "nominal": 269.189666688,
+              "low": 267.362243589,
+              "high": 270.973898004,
+              "half_range": 1.8058272074999877,
+              "midpoint_curvature": -0.021595891499998743
+            },
+            "maximum_K": {
+              "nominal": 277.772717555,
+              "low": 275.518242069,
+              "high": 279.991396269,
+              "half_range": 2.236577100000005,
+              "midpoint_curvature": -0.01789838599995619
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 0.8626910360000011,
+              "low": 0.8206142020000016,
+              "high": 0.90490386700003,
+              "half_range": 0.04214483250001422,
+              "midpoint_curvature": 6.799850001470986e-05
+            }
+          },
+          "pcb1": {
+            "minimum_K": {
+              "nominal": 244.968042077,
+              "low": 243.858891766,
+              "high": 246.04191629,
+              "half_range": 1.0915122619999948,
+              "midpoint_curvature": -0.017638049000026967
+            },
+            "maximum_K": {
+              "nominal": 300.411859877,
+              "low": 297.48482251,
+              "high": 303.282233845,
+              "half_range": 2.8987056674999963,
+              "midpoint_curvature": -0.028331699499972274
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 27.912510348000012,
+              "low": 27.076740014999984,
+              "high": 28.726973001000033,
+              "half_range": 0.8251164930000243,
+              "midpoint_curvature": -0.010653840000003356
+            }
+          },
+          "pcb2": {
+            "minimum_K": {
+              "nominal": 244.656809942,
+              "low": 243.550888296,
+              "high": 245.728327482,
+              "half_range": 1.0887195929999933,
+              "midpoint_curvature": -0.017202053000005435
+            },
+            "maximum_K": {
+              "nominal": 301.648538784,
+              "low": 298.679442645,
+              "high": 304.561003708,
+              "half_range": 2.940780531499996,
+              "midpoint_curvature": -0.02831560750001927
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 28.09449341300001,
+              "low": 27.192385849999994,
+              "high": 28.976361145999988,
+              "half_range": 0.8919876479999971,
+              "midpoint_curvature": -0.010119915000018409
+            }
+          },
+          "pcb3": {
+            "minimum_K": {
+              "nominal": 244.649777754,
+              "low": 243.54431224,
+              "high": 245.720707088,
+              "half_range": 1.0881974240000005,
+              "midpoint_curvature": -0.017268090000015945
+            },
+            "maximum_K": {
+              "nominal": 301.652352611,
+              "low": 298.682828029,
+              "high": 304.565121062,
+              "half_range": 2.941146516499998,
+              "midpoint_curvature": -0.02837806550002142
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 27.332953949,
+              "low": 26.49184415999997,
+              "high": 28.183748870000045,
+              "half_range": 0.845952355000037,
+              "midpoint_curvature": 0.004842566000007764
+            }
+          },
+          "pcb4": {
+            "minimum_K": {
+              "nominal": 244.954789027,
+              "low": 243.846705843,
+              "high": 246.027552369,
+              "half_range": 1.0904232630000052,
+              "midpoint_curvature": -0.017659921000017675
+            },
+            "maximum_K": {
+              "nominal": 300.417995506,
+              "low": 297.490105939,
+              "high": 303.289289217,
+              "half_range": 2.8995916389999934,
+              "midpoint_curvature": -0.02829792800002906
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 28.394610623000005,
+              "low": 27.547610891999966,
+              "high": 29.345738144999984,
+              "half_range": 0.8990636265000091,
+              "midpoint_curvature": 0.0520638954999697
+            }
+          }
+        },
+        "low_periodicity_K": 0.0018595340000047145,
+        "high_periodicity_K": 0.001790574999972705,
+        "periodicity_pass": true
+      },
+      {
+        "factor": "external_epsilon",
+        "low_case": "uncertainty_external_epsilon_low_extend",
+        "high_case": "uncertainty_external_epsilon_high_extend_extend",
+        "maximum_half_range_average_curve_K": 2.419603503719003,
+        "maximum_midpoint_curvature_K": 0.06990303090617545,
+        "maximum_battery_half_range_K": 2.244140338195308,
+        "nodal_metrics": {
+          "battery": {
+            "minimum_K": {
+              "nominal": 269.189666688,
+              "low": 271.328782411,
+              "high": 267.176653656,
+              "half_range": -2.0760643775000176,
+              "midpoint_curvature": 0.06305134550001412
+            },
+            "maximum_K": {
+              "nominal": 277.772717555,
+              "low": 280.08789835,
+              "high": 275.597099272,
+              "half_range": -2.2453995390000046,
+              "midpoint_curvature": 0.06978125599999885
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 0.8626910360000011,
+              "low": 0.8810851609999872,
+              "high": 0.8451381339999671,
+              "half_range": -0.017973513500010085,
+              "midpoint_curvature": 0.0004206114999760757
+            }
+          },
+          "pcb1": {
+            "minimum_K": {
+              "nominal": 244.968042077,
+              "low": 247.156862734,
+              "high": 242.909812895,
+              "half_range": -2.1235249194999994,
+              "midpoint_curvature": 0.06529573749998008
+            },
+            "maximum_K": {
+              "nominal": 300.411859877,
+              "low": 302.747033751,
+              "high": 298.205711713,
+              "half_range": -2.270661018999988,
+              "midpoint_curvature": 0.06451285500003223
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 27.912510348000012,
+              "low": 27.960552328000006,
+              "high": 27.854312089000018,
+              "half_range": -0.053120119499993734,
+              "midpoint_curvature": -0.005078139500000134
+            }
+          },
+          "pcb2": {
+            "minimum_K": {
+              "nominal": 244.656809942,
+              "low": 246.848034137,
+              "high": 242.596898942,
+              "half_range": -2.125567597500009,
+              "midpoint_curvature": 0.06565659750000918
+            },
+            "maximum_K": {
+              "nominal": 301.648538784,
+              "low": 303.990675608,
+              "high": 299.435387635,
+              "half_range": -2.27764398650001,
+              "midpoint_curvature": 0.06449283750004042
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 28.09449341300001,
+              "low": 28.193350834,
+              "high": 27.988012620999996,
+              "half_range": -0.10266910650000227,
+              "midpoint_curvature": -0.003811685500011208
+            }
+          },
+          "pcb3": {
+            "minimum_K": {
+              "nominal": 244.649777754,
+              "low": 246.840614443,
+              "high": 242.590109658,
+              "half_range": -2.125252392500002,
+              "midpoint_curvature": 0.06558429649999198
+            },
+            "maximum_K": {
+              "nominal": 301.652352611,
+              "low": 303.994684419,
+              "high": 299.439021021,
+              "half_range": -2.277831699000018,
+              "midpoint_curvature": 0.0645001089999937
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 27.332953949,
+              "low": 27.394110417000036,
+              "high": 27.261801796999976,
+              "half_range": -0.06615431000003014,
+              "midpoint_curvature": -0.0049978419999945345
+            }
+          },
+          "pcb4": {
+            "minimum_K": {
+              "nominal": 244.954789027,
+              "low": 247.142865311,
+              "high": 242.897232646,
+              "half_range": -2.1228163325000082,
+              "midpoint_curvature": 0.0652599514999963
+            },
+            "maximum_K": {
+              "nominal": 300.417995506,
+              "low": 302.753584322,
+              "high": 298.211465274,
+              "half_range": -2.271059524000009,
+              "midpoint_curvature": 0.0645292919999747
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 28.394610623000005,
+              "low": 28.440815896000004,
+              "high": 28.337843724000038,
+              "half_range": -0.051486085999982834,
+              "midpoint_curvature": -0.005280812999984619
+            }
+          }
+        },
+        "low_periodicity_K": 0.001757503000021643,
+        "high_periodicity_K": 0.0036694630000511097,
+        "periodicity_pass": true
+      },
+      {
+        "factor": "internal_epsilon",
+        "low_case": "uncertainty_internal_epsilon_low_extend",
+        "high_case": "uncertainty_internal_epsilon_high",
+        "maximum_half_range_average_curve_K": 0.6104976989938677,
+        "maximum_midpoint_curvature_K": 0.03402083761420727,
+        "maximum_battery_half_range_K": 0.4295818726484413,
+        "nodal_metrics": {
+          "battery": {
+            "minimum_K": {
+              "nominal": 269.189666688,
+              "low": 269.360686819,
+              "high": 268.981849797,
+              "half_range": -0.18941851100001372,
+              "midpoint_curvature": -0.01839838000000782
+            },
+            "maximum_K": {
+              "nominal": 277.772717555,
+              "low": 277.32269464,
+              "high": 278.19299256,
+              "half_range": 0.43514895999999226,
+              "midpoint_curvature": -0.014873954999984562
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 0.8626910360000011,
+              "low": 0.800556720999964,
+              "high": 0.9249389480000332,
+              "half_range": 0.06219111350003459,
+              "midpoint_curvature": 5.679849999751241e-05
+            }
+          },
+          "pcb1": {
+            "minimum_K": {
+              "nominal": 244.968042077,
+              "low": 244.79452848,
+              "high": 245.132469158,
+              "half_range": 0.1689703389999977,
+              "midpoint_curvature": -0.004543258000012429
+            },
+            "maximum_K": {
+              "nominal": 300.411859877,
+              "low": 300.494681188,
+              "high": 300.333790081,
+              "half_range": -0.08044555349999882,
+              "midpoint_curvature": 0.00237575750003316
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 27.912510348000012,
+              "low": 28.378370621999977,
+              "high": 27.497230591000005,
+              "half_range": -0.4405700154999863,
+              "midpoint_curvature": 0.02529025849997879
+            }
+          },
+          "pcb2": {
+            "minimum_K": {
+              "nominal": 244.656809942,
+              "low": 244.480890771,
+              "high": 244.82342291,
+              "half_range": 0.17126606950000678,
+              "midpoint_curvature": -0.004653101499997092
+            },
+            "maximum_K": {
+              "nominal": 301.648538784,
+              "low": 301.740382507,
+              "high": 301.561657058,
+              "half_range": -0.08936272450000615,
+              "midpoint_curvature": 0.0024809985000047163
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 28.09449341300001,
+              "low": 28.382266329000004,
+              "high": 27.834377528999994,
+              "half_range": -0.27394440000000486,
+              "midpoint_curvature": 0.013828515999989577
+            }
+          },
+          "pcb3": {
+            "minimum_K": {
+              "nominal": 244.649777754,
+              "low": 244.47498933,
+              "high": 244.815082374,
+              "half_range": 0.17004652200000692,
+              "midpoint_curvature": -0.004741902000006348
+            },
+            "maximum_K": {
+              "nominal": 301.652352611,
+              "low": 301.743478221,
+              "high": 301.566364672,
+              "half_range": -0.08855677449997756,
+              "midpoint_curvature": 0.0025688354999715557
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 27.332953949,
+              "low": 27.770240961000013,
+              "high": 27.338124832999995,
+              "half_range": -0.21605806400000915,
+              "midpoint_curvature": 0.2212289480000038
+            }
+          },
+          "pcb4": {
+            "minimum_K": {
+              "nominal": 244.954789027,
+              "low": 244.783730453,
+              "high": 245.116338507,
+              "half_range": 0.16630402699999536,
+              "midpoint_curvature": -0.00475454700000455
+            },
+            "maximum_K": {
+              "nominal": 300.417995506,
+              "low": 300.499221562,
+              "high": 300.341973568,
+              "half_range": -0.078623996999994,
+              "midpoint_curvature": 0.0026020589999689037
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 28.394610623000005,
+              "low": 28.860086157000012,
+              "high": 28.496289939000008,
+              "half_range": -0.18189810900000225,
+              "midpoint_curvature": 0.28357742500000427
+            }
+          }
+        },
+        "low_periodicity_K": 0.0014304279999919345,
+        "high_periodicity_K": 0.007070306000002802,
+        "periodicity_pass": true
+      },
+      {
+        "factor": "capacity_scale",
+        "low_case": "uncertainty_capacity_scale_low_extend_extend",
+        "high_case": "uncertainty_capacity_scale_high_extend",
+        "maximum_half_range_average_curve_K": 2.6756838704854147,
+        "maximum_midpoint_curvature_K": 0.19486448875176166,
+        "maximum_battery_half_range_K": 0.8421752167695047,
+        "nodal_metrics": {
+          "battery": {
+            "minimum_K": {
+              "nominal": 269.189666688,
+              "low": 268.272473865,
+              "high": 269.898899937,
+              "half_range": 0.8132130360000076,
+              "midpoint_curvature": -0.10397978699995747
+            },
+            "maximum_K": {
+              "nominal": 277.772717555,
+              "low": 278.612962671,
+              "high": 277.135852006,
+              "half_range": -0.7385553324999989,
+              "midpoint_curvature": 0.10168978349997815
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 0.8626910360000011,
+              "low": 0.9076598269999749,
+              "high": 0.820067239000025,
+              "half_range": -0.04379629399997498,
+              "midpoint_curvature": 0.0011724969999988843
+            }
+          },
+          "pcb1": {
+            "minimum_K": {
+              "nominal": 244.968042077,
+              "low": 243.00197751,
+              "high": 246.665141041,
+              "half_range": 1.8315817655000046,
+              "midpoint_curvature": -0.13448280150001324
+            },
+            "maximum_K": {
+              "nominal": 300.411859877,
+              "low": 301.855750423,
+              "high": 299.098624286,
+              "half_range": -1.3785630685,
+              "midpoint_curvature": 0.06532747750003409
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 27.912510348000012,
+              "low": 28.80934638499997,
+              "high": 27.35636094700004,
+              "half_range": -0.7264927189999639,
+              "midpoint_curvature": 0.17034331799999336
+            }
+          },
+          "pcb2": {
+            "minimum_K": {
+              "nominal": 244.656809942,
+              "low": 242.707492379,
+              "high": 246.337093966,
+              "half_range": 1.8148007934999981,
+              "midpoint_curvature": -0.13451676950001
+            },
+            "maximum_K": {
+              "nominal": 301.648538784,
+              "low": 303.108131204,
+              "high": 300.319445456,
+              "half_range": -1.3943428740000172,
+              "midpoint_curvature": 0.0652495460000182
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 28.09449341300001,
+              "low": 29.420689847999995,
+              "high": 26.82875005400001,
+              "half_range": -1.295969896999992,
+              "midpoint_curvature": 0.030226537999993752
+            }
+          },
+          "pcb3": {
+            "minimum_K": {
+              "nominal": 244.649777754,
+              "low": 242.697968337,
+              "high": 246.331788747,
+              "half_range": 1.8169102049999992,
+              "midpoint_curvature": -0.13489921200002186
+            },
+            "maximum_K": {
+              "nominal": 301.652352611,
+              "low": 303.114290614,
+              "high": 300.321506841,
+              "half_range": -1.3963918865000267,
+              "midpoint_curvature": 0.06554611650000197
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 27.332953949,
+              "low": 28.888017468999976,
+              "high": 26.59621320900004,
+              "half_range": -1.1459021299999677,
+              "midpoint_curvature": 0.4091613900000084
+            }
+          },
+          "pcb4": {
+            "minimum_K": {
+              "nominal": 244.954789027,
+              "low": 242.983003628,
+              "high": 246.655771294,
+              "half_range": 1.8363838329999993,
+              "midpoint_curvature": -0.13540156599998454
+            },
+            "maximum_K": {
+              "nominal": 300.417995506,
+              "low": 301.867166,
+              "high": 299.101148695,
+              "half_range": -1.3830086524999956,
+              "midpoint_curvature": 0.06616184149999071
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 28.394610623000005,
+              "low": 30.08177962299999,
+              "high": 27.864265347000014,
+              "half_range": -1.1087571379999872,
+              "midpoint_curvature": 0.5784118619999958
+            }
+          }
+        },
+        "low_periodicity_K": 0.0007003039999631255,
+        "high_periodicity_K": 0.006817882999996527,
+        "periodicity_pass": true
+      },
+      {
+        "factor": "panel_k",
+        "low_case": "uncertainty_panel_k_low_extend",
+        "high_case": "uncertainty_panel_k_high_extend",
+        "maximum_half_range_average_curve_K": 1.9751036189770161,
+        "maximum_midpoint_curvature_K": 0.15442272045766003,
+        "maximum_battery_half_range_K": 0.1821653853789087,
+        "nodal_metrics": {
+          "battery": {
+            "minimum_K": {
+              "nominal": 269.189666688,
+              "low": 269.386806932,
+              "high": 269.037319319,
+              "half_range": -0.17474380650000398,
+              "midpoint_curvature": 0.022396437499992317
+            },
+            "maximum_K": {
+              "nominal": 277.772717555,
+              "low": 277.937173329,
+              "high": 277.642198854,
+              "half_range": -0.1474872375000018,
+              "midpoint_curvature": 0.016968536500030496
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 0.8626910360000011,
+              "low": 0.8667426690000184,
+              "high": 0.8581401899999719,
+              "half_range": -0.004301239500023257,
+              "midpoint_curvature": -0.00024960650000593887
+            }
+          },
+          "pcb1": {
+            "minimum_K": {
+              "nominal": 244.968042077,
+              "low": 245.096562174,
+              "high": 244.878066408,
+              "half_range": -0.10924788300000898,
+              "midpoint_curvature": 0.019272214000011445
+            },
+            "maximum_K": {
+              "nominal": 300.411859877,
+              "low": 299.994443718,
+              "high": 300.752442064,
+              "half_range": 0.37899917299998265,
+              "midpoint_curvature": -0.03841698600001564
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 27.912510348000012,
+              "low": 27.851580833000014,
+              "high": 27.961357942999996,
+              "half_range": 0.0548885549999909,
+              "midpoint_curvature": -0.0060409600000070895
+            }
+          },
+          "pcb2": {
+            "minimum_K": {
+              "nominal": 244.656809942,
+              "low": 244.810405258,
+              "high": 244.547313805,
+              "half_range": -0.13154572650000773,
+              "midpoint_curvature": 0.02204958949999991
+            },
+            "maximum_K": {
+              "nominal": 301.648538784,
+              "low": 301.166174083,
+              "high": 302.040375431,
+              "half_range": 0.43710067399999275,
+              "midpoint_curvature": -0.04526402699997334
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 28.09449341300001,
+              "low": 27.574250941999992,
+              "high": 28.634864778000008,
+              "half_range": 0.530306918000008,
+              "midpoint_curvature": 0.01006444699999065
+            }
+          },
+          "pcb3": {
+            "minimum_K": {
+              "nominal": 244.649777754,
+              "low": 244.804099204,
+              "high": 244.539667092,
+              "half_range": -0.1322160560000043,
+              "midpoint_curvature": 0.02210539399999334
+            },
+            "maximum_K": {
+              "nominal": 301.652352611,
+              "low": 301.169437583,
+              "high": 302.044654904,
+              "half_range": 0.43760866050001823,
+              "midpoint_curvature": -0.04530636750001804
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 27.332953949,
+              "low": 26.83141671300001,
+              "high": 27.756579402,
+              "half_range": 0.4625813444999949,
+              "midpoint_curvature": -0.03895589149999523
+            }
+          },
+          "pcb4": {
+            "minimum_K": {
+              "nominal": 244.954789027,
+              "low": 245.084943881,
+              "high": 244.863454305,
+              "half_range": -0.11074478799999099,
+              "midpoint_curvature": 0.019410065999977633
+            },
+            "maximum_K": {
+              "nominal": 300.417995506,
+              "low": 299.99922206,
+              "high": 300.759752012,
+              "half_range": 0.3802649759999781,
+              "midpoint_curvature": -0.038508470000010675
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 28.394610623000005,
+              "low": 28.34247530800002,
+              "high": 28.510873916000037,
+              "half_range": 0.08419930400000908,
+              "midpoint_curvature": 0.032063989000022275
+            }
+          }
+        },
+        "low_periodicity_K": 0.0008354660000122749,
+        "high_periodicity_K": 0.0009871060000250509,
+        "periodicity_pass": true
+      },
+      {
+        "factor": "pcb_k",
+        "low_case": "uncertainty_pcb_k_low_extend",
+        "high_case": "uncertainty_pcb_k_high_extend",
+        "maximum_half_range_average_curve_K": 0.47312239026564384,
+        "maximum_midpoint_curvature_K": 0.033906553244605675,
+        "maximum_battery_half_range_K": 0.47312239026564384,
+        "nodal_metrics": {
+          "battery": {
+            "minimum_K": {
+              "nominal": 269.189666688,
+              "low": 269.718228222,
+              "high": 268.724727559,
+              "half_range": -0.49675033150001013,
+              "midpoint_curvature": 0.031811202499966384
+            },
+            "maximum_K": {
+              "nominal": 277.772717555,
+              "low": 277.677865695,
+              "high": 277.884612816,
+              "half_range": 0.10337356050001745,
+              "midpoint_curvature": 0.008521700500011775
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 0.8626910360000011,
+              "low": 0.786749943000018,
+              "high": 0.9330172840000159,
+              "half_range": 0.07313367049999897,
+              "midpoint_curvature": -0.0028074224999841135
+            }
+          },
+          "pcb1": {
+            "minimum_K": {
+              "nominal": 244.968042077,
+              "low": 244.787702033,
+              "high": 245.143997866,
+              "half_range": 0.17814791650000927,
+              "midpoint_curvature": -0.002192127499995422
+            },
+            "maximum_K": {
+              "nominal": 300.411859877,
+              "low": 300.558885833,
+              "high": 300.267244908,
+              "half_range": -0.1458204624999837,
+              "midpoint_curvature": 0.0012054935000378464
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 27.912510348000012,
+              "low": 28.384143531999996,
+              "high": 27.469969365999987,
+              "half_range": -0.45708708300000467,
+              "midpoint_curvature": 0.014546100999979217
+            }
+          },
+          "pcb2": {
+            "minimum_K": {
+              "nominal": 244.656809942,
+              "low": 244.470322456,
+              "high": 244.839400906,
+              "half_range": 0.18453922500000886,
+              "midpoint_curvature": -0.0019482609999954548
+            },
+            "maximum_K": {
+              "nominal": 301.648538784,
+              "low": 301.806946841,
+              "high": 301.492691327,
+              "half_range": -0.15712775700001202,
+              "midpoint_curvature": 0.0012803000000189968
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 28.09449341300001,
+              "low": 28.11484268999999,
+              "high": 28.034422741000014,
+              "half_range": -0.04020997449998731,
+              "midpoint_curvature": -0.019860697500007518
+            }
+          },
+          "pcb3": {
+            "minimum_K": {
+              "nominal": 244.649777754,
+              "low": 244.464847795,
+              "high": 244.830820893,
+              "half_range": 0.182986549000006,
+              "midpoint_curvature": -0.0019434100000239596
+            },
+            "maximum_K": {
+              "nominal": 301.652352611,
+              "low": 301.809166726,
+              "high": 301.498105727,
+              "half_range": -0.15553049950000286,
+              "midpoint_curvature": 0.001283615499971802
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 27.332953949,
+              "low": 27.74015315099996,
+              "high": 27.099029624000025,
+              "half_range": -0.3205617634999669,
+              "midpoint_curvature": 0.0866374384999915
+            }
+          },
+          "pcb4": {
+            "minimum_K": {
+              "nominal": 244.954789027,
+              "low": 244.777449227,
+              "high": 245.127822954,
+              "half_range": 0.17518686350000223,
+              "midpoint_curvature": -0.0021529365000105827
+            },
+            "maximum_K": {
+              "nominal": 300.417995506,
+              "low": 300.56188225,
+              "high": 300.276491706,
+              "half_range": -0.14269527199999743,
+              "midpoint_curvature": 0.0011914719999595036
+            },
+            "maximum_simultaneous_spread_K": {
+              "nominal": 28.394610623000005,
+              "low": 28.950628294000012,
+              "high": 28.23864492199999,
+              "half_range": -0.3559916860000101,
+              "midpoint_curvature": 0.20002598499999635
+            }
+          }
+        },
+        "low_periodicity_K": 0.00851513699996076,
+        "high_periodicity_K": 0.005541497999956846,
+        "periodicity_pass": true
+      }
+    ],
+    "phase_integrated_affine_variance_shares": {
+      "battery": {
+        "alpha": 0.4431436267735725,
+        "external_epsilon": 0.5053466972403986,
+        "internal_epsilon": 0.006215855535238545,
+        "capacity_scale": 0.034264117381114054,
+        "panel_k": 0.0028038350902711623,
+        "pcb_k": 0.008225867979404916
+      },
+      "bolts": {
+        "alpha": 0.369274015383994,
+        "external_epsilon": 0.4649007732362954,
+        "internal_epsilon": 0.0017671705686707936,
+        "capacity_scale": 0.1355586191244262,
+        "panel_k": 0.024011126899814106,
+        "pcb_k": 0.004488294786799441
+      },
+      "frame": {
+        "alpha": 0.38675947449455345,
+        "external_epsilon": 0.4688371132925126,
+        "internal_epsilon": 0.0008584354780736809,
+        "capacity_scale": 0.14219884581275632,
+        "panel_k": 0.00048649809143214444,
+        "pcb_k": 0.0008596328306717804
+      },
+      "panel1": {
+        "alpha": 0.385644434231271,
+        "external_epsilon": 0.40210015653599046,
+        "internal_epsilon": 0.007497309001983416,
+        "capacity_scale": 0.15204419444043527,
+        "panel_k": 0.05238946145966042,
+        "pcb_k": 0.0003244443306594845
+      },
+      "panel2": {
+        "alpha": 0.39739889452717503,
+        "external_epsilon": 0.45806526597409297,
+        "internal_epsilon": 0.001292173278817336,
+        "capacity_scale": 0.13403655058898042,
+        "panel_k": 0.008812666015620007,
+        "pcb_k": 0.00039444961531423766
+      },
+      "panel3": {
+        "alpha": 0.40411376250715075,
+        "external_epsilon": 0.44171889088209015,
+        "internal_epsilon": 0.006137293570198653,
+        "capacity_scale": 0.06535329514632127,
+        "panel_k": 0.0823595921110247,
+        "pcb_k": 0.0003171657832143491
+      },
+      "panel4": {
+        "alpha": 0.3384489737619635,
+        "external_epsilon": 0.3600381462796085,
+        "internal_epsilon": 0.006247365055329668,
+        "capacity_scale": 0.24664438124111437,
+        "panel_k": 0.048353923123945354,
+        "pcb_k": 0.0002672105380386879
+      },
+      "panel5": {
+        "alpha": 0.304625831196846,
+        "external_epsilon": 0.47352287651119535,
+        "internal_epsilon": 0.003886320006662656,
+        "capacity_scale": 0.12538603889156322,
+        "panel_k": 0.09211228491018139,
+        "pcb_k": 0.00046664848355128295
+      },
+      "panel6": {
+        "alpha": 0.3043366250350358,
+        "external_epsilon": 0.473084233686873,
+        "internal_epsilon": 0.0038405342093479405,
+        "capacity_scale": 0.12599766870669823,
+        "panel_k": 0.09234059468589186,
+        "pcb_k": 0.00040034367615301324
+      },
+      "pcb1": {
+        "alpha": 0.3883684359195795,
+        "external_epsilon": 0.4802800228198366,
+        "internal_epsilon": 0.01112399785251076,
+        "capacity_scale": 0.11483861566224794,
+        "panel_k": 0.0031201074174677644,
+        "pcb_k": 0.00226882032835732
+      },
+      "pcb2": {
+        "alpha": 0.4440233428357063,
+        "external_epsilon": 0.5117617972257668,
+        "internal_epsilon": 0.005707903184090834,
+        "capacity_scale": 0.03136724474502824,
+        "panel_k": 0.00248099632591979,
+        "pcb_k": 0.004658715683488221
+      },
+      "pcb3": {
+        "alpha": 0.40961471000619487,
+        "external_epsilon": 0.4707080444444405,
+        "internal_epsilon": 0.010160511939964683,
+        "capacity_scale": 0.10156245265319123,
+        "panel_k": 0.002120951135949994,
+        "pcb_k": 0.005833329820258672
+      },
+      "pcb4": {
+        "alpha": 0.3759257480579007,
+        "external_epsilon": 0.46358237635131144,
+        "internal_epsilon": 0.01536687028402687,
+        "capacity_scale": 0.1385566288740635,
+        "panel_k": 0.0030958341581670806,
+        "pcb_k": 0.003472542274530383
+      }
+    },
+    "affine_trajectory_extrema_quantiles": {
+      "battery": {
+        "minimum_K_p05_p50_p95": [
+          266.78122406230256,
+          269.6237130418032,
+          272.4484519485525
+        ],
+        "maximum_K_p05_p50_p95": [
+          274.3297704690615,
+          277.51106700211017,
+          280.626922604523
+        ]
+      },
+      "bolts": {
+        "minimum_K_p05_p50_p95": [
+          250.34157692858554,
+          253.3507568968443,
+          256.2684602472791
+        ],
+        "maximum_K_p05_p50_p95": [
+          281.6501797302364,
+          285.03463417377986,
+          288.4070478437657
+        ]
+      },
+      "frame": {
+        "minimum_K_p05_p50_p95": [
+          244.60835451222195,
+          247.58969827930514,
+          250.52009482479946
+        ],
+        "maximum_K_p05_p50_p95": [
+          286.8742842214521,
+          290.2976715652707,
+          293.6969450569857
+        ]
+      },
+      "panel1": {
+        "minimum_K_p05_p50_p95": [
+          238.34929592063102,
+          241.47329049995153,
+          244.51011206055702
+        ],
+        "maximum_K_p05_p50_p95": [
+          311.28137799151375,
+          315.6990051826905,
+          320.038190338685
+        ]
+      },
+      "panel2": {
+        "minimum_K_p05_p50_p95": [
+          249.91372931055398,
+          252.59815514090474,
+          255.24042552387388
+        ],
+        "maximum_K_p05_p50_p95": [
+          285.80286172860264,
+          288.8164328491915,
+          291.79657827771274
+        ]
+      },
+      "panel3": {
+        "minimum_K_p05_p50_p95": [
+          242.21858032951798,
+          245.10332549512674,
+          247.92606332715516
+        ],
+        "maximum_K_p05_p50_p95": [
+          299.52274744530337,
+          303.59830799720237,
+          307.5787831501563
+        ]
+      },
+      "panel4": {
+        "minimum_K_p05_p50_p95": [
+          241.43296224256216,
+          244.2708953819823,
+          247.05212156688066
+        ],
+        "maximum_K_p05_p50_p95": [
+          320.7118640018801,
+          325.1468927274731,
+          329.4883436660735
+        ]
+      },
+      "panel5": {
+        "minimum_K_p05_p50_p95": [
+          242.87239314591966,
+          245.79650996203975,
+          248.65473926505604
+        ],
+        "maximum_K_p05_p50_p95": [
+          274.98170064309835,
+          278.38405001343165,
+          281.7663764426202
+        ]
+      },
+      "panel6": {
+        "minimum_K_p05_p50_p95": [
+          242.8700113493123,
+          245.80323056476254,
+          248.6704772068362
+        ],
+        "maximum_K_p05_p50_p95": [
+          274.96204716626636,
+          278.3696033119805,
+          281.7608763687041
+        ]
+      },
+      "pcb1": {
+        "minimum_K_p05_p50_p95": [
+          257.1412822444704,
+          259.9640507979017,
+          262.7868347547103
+        ],
+        "maximum_K_p05_p50_p95": [
+          277.347167794674,
+          280.7054555181749,
+          284.03185804731737
+        ]
+      },
+      "pcb2": {
+        "minimum_K_p05_p50_p95": [
+          265.25086299599343,
+          268.06436422687557,
+          270.81976821406226
+        ],
+        "maximum_K_p05_p50_p95": [
+          275.4083025005511,
+          278.6125272104981,
+          281.7625893219915
+        ]
+      },
+      "pcb3": {
+        "minimum_K_p05_p50_p95": [
+          260.25636617309516,
+          263.1519536258368,
+          266.02703762926797
+        ],
+        "maximum_K_p05_p50_p95": [
+          279.60233837528995,
+          283.06310539259016,
+          286.44464299138593
+        ]
+      },
+      "pcb4": {
+        "minimum_K_p05_p50_p95": [
+          256.4209965315875,
+          259.30232783572046,
+          262.18419765034463
+        ],
+        "maximum_K_p05_p50_p95": [
+          277.84143756096466,
+          281.323886653332,
+          284.7616148058876
+        ]
+      }
+    },
+    "band_note": "Conditional pointwise local affine propagation with independent assumed uniform ranges. These are scenario quantiles, not measured confidence intervals or full nonlinear joint ANSYS results. The same sampled inputs apply at every phase of each trajectory.",
+    "numerical_resolution_note": "Paired screening uses the original mesh, 10 s steps and hemicube resolution 20. Solid-mesh, time-step and angular-resolution discrepancies are reported independently; fine-mesh transfer of sensitivities requires a separate cross-check before claiming resolution-independent input bands.",
+    "nonlinear_joint_checks": [
+      {
+        "case": "uncertainty_joint_peak_hot_extend",
+        "normalized_inputs": {
+          "alpha": 1,
+          "external_epsilon": -1,
+          "internal_epsilon": 1,
+          "capacity_scale": -1,
+          "panel_k": -1,
+          "pcb_k": 1
+        },
+        "design_phase_s": 2310.0,
+        "maximum_average_curve_affine_error_K": 0.4586185793047548,
+        "by_part_K": {
+          "battery": 0.4586185793047548,
+          "bolts": 0.2534899749246051,
+          "frame": 0.1747186111093697,
+          "panel1": 0.36812778989911976,
+          "panel2": 0.1833075274365683,
+          "panel3": 0.4075833576605419,
+          "panel4": 0.3336902600384519,
+          "panel5": 0.08710749152248809,
+          "panel6": 0.10453559448095007,
+          "pcb1": 0.31091160611214264,
+          "pcb2": 0.4093724626466724,
+          "pcb3": 0.3791928899655659,
+          "pcb4": 0.4242546328955541
+        },
+        "periodicity_K": 0.003230298000005405,
+        "periodicity_pass": true
+      },
+      {
+        "case": "uncertainty_joint_peak_cold_extend",
+        "normalized_inputs": {
+          "alpha": -1,
+          "external_epsilon": 1,
+          "internal_epsilon": -1,
+          "capacity_scale": 1,
+          "panel_k": 1,
+          "pcb_k": -1
+        },
+        "design_phase_s": 2310.0,
+        "maximum_average_curve_affine_error_K": 0.4292207397962784,
+        "by_part_K": {
+          "battery": 0.4121783420546876,
+          "bolts": 0.21881220051926675,
+          "frame": 0.16924669011933702,
+          "panel1": 0.3488328051649887,
+          "panel2": 0.19007275421358827,
+          "panel3": 0.3724674464021973,
+          "panel4": 0.29690001823723833,
+          "panel5": 0.09432208571627143,
+          "panel6": 0.10572778163137286,
+          "pcb1": 0.3347049441086938,
+          "pcb2": 0.3612546942810013,
+          "pcb3": 0.3929040724844981,
+          "pcb4": 0.4292207397962784
+        },
+        "periodicity_K": 0.00750626500001772,
+        "periodicity_pass": true
+      }
+    ],
+    "conditional_source_band_comparison": {
+      "battery": {
+        "fraction_of_digitized_reference_samples_in_band": 0.5913978494623656,
+        "maximum_departure_outside_band_K": 1.0354841032768718
+      },
+      "panel1": {
+        "fraction_of_digitized_reference_samples_in_band": 0.5842293906810035,
+        "maximum_departure_outside_band_K": 10.356419459030917
+      },
+      "panel2": {
+        "fraction_of_digitized_reference_samples_in_band": 0.2132616487455197,
+        "maximum_departure_outside_band_K": 2.697906365971221
+      },
+      "panel3": {
+        "fraction_of_digitized_reference_samples_in_band": 0.6666666666666666,
+        "maximum_departure_outside_band_K": 11.131915734580957
+      },
+      "panel4": {
+        "fraction_of_digitized_reference_samples_in_band": 0.5394265232974911,
+        "maximum_departure_outside_band_K": 9.847566119459316
+      },
+      "panel5": {
+        "fraction_of_digitized_reference_samples_in_band": 0.3763440860215054,
+        "maximum_departure_outside_band_K": 2.548291077287388
+      },
+      "panel6": {
+        "fraction_of_digitized_reference_samples_in_band": 0.460573476702509,
+        "maximum_departure_outside_band_K": 1.5435601024964853
+      },
+      "pcb1": {
+        "fraction_of_digitized_reference_samples_in_band": 0.7544802867383512,
+        "maximum_departure_outside_band_K": 0.761028952111019
+      },
+      "pcb2": {
+        "fraction_of_digitized_reference_samples_in_band": 0.5663082437275986,
+        "maximum_departure_outside_band_K": 2.254873953809067
+      },
+      "pcb3": {
+        "fraction_of_digitized_reference_samples_in_band": 0.4910394265232975,
+        "maximum_departure_outside_band_K": 3.137699786062342
+      },
+      "pcb4": {
+        "fraction_of_digitized_reference_samples_in_band": 0.6559139784946236,
+        "maximum_departure_outside_band_K": 1.306224130934254
+      }
+    },
+    "source_band_comparison_note": "Coverage is a descriptive fraction of digitized source-curve samples under analyst-chosen bands, not a probabilistic model-validation test. Geometry, forcing interpretation and model-form discrepancies remain outside the input ranges.",
+    "separate_nominal_resolution_diagnostics": {
+      "battery": {
+        "largest_observed_nominal_curve_shifts_K": {
+          "spatial": 0.19842691785430588,
+          "temporal": 0.03644344946485489,
+          "angular": 0.0032127023438306423
+        },
+        "sum_of_largest_observed_shifts_K": 0.23808306966299142,
+        "largest_conditional_band_half_width_K": 3.1759562791003475,
+        "interpretation": "Separate nominal-resolution diagnostics; their sum is not a certified error bound or a probability interval. Resolution/input interactions were not exhaustively tested."
+      },
+      "bolts": {
+        "largest_observed_nominal_curve_shifts_K": {
+          "spatial": 0.21482001937977202,
+          "temporal": 0.09139317411018055,
+          "angular": 0.004901626711614426
+        },
+        "sum_of_largest_observed_shifts_K": 0.311114820201567,
+        "largest_conditional_band_half_width_K": 3.437091050888199,
+        "interpretation": "Separate nominal-resolution diagnostics; their sum is not a certified error bound or a probability interval. Resolution/input interactions were not exhaustively tested."
+      },
+      "frame": {
+        "largest_observed_nominal_curve_shifts_K": {
+          "spatial": 0.22466585739061884,
+          "temporal": 0.13383412875896283,
+          "angular": 0.002135066666767216
+        },
+        "sum_of_largest_observed_shifts_K": 0.3606350528163489,
+        "largest_conditional_band_half_width_K": 3.442691702679042,
+        "interpretation": "Separate nominal-resolution diagnostics; their sum is not a certified error bound or a probability interval. Resolution/input interactions were not exhaustively tested."
+      },
+      "panel1": {
+        "largest_observed_nominal_curve_shifts_K": {
+          "spatial": 0.7626021738487907,
+          "temporal": 0.17073199001634976,
+          "angular": 0.004303429716514984
+        },
+        "sum_of_largest_observed_shifts_K": 0.9376375935816554,
+        "largest_conditional_band_half_width_K": 4.456823221074671,
+        "interpretation": "Separate nominal-resolution diagnostics; their sum is not a certified error bound or a probability interval. Resolution/input interactions were not exhaustively tested."
+      },
+      "panel2": {
+        "largest_observed_nominal_curve_shifts_K": {
+          "spatial": 0.19638552344639493,
+          "temporal": 0.21840015294074533,
+          "angular": 0.004617762724365093
+        },
+        "sum_of_largest_observed_shifts_K": 0.41940343911150535,
+        "largest_conditional_band_half_width_K": 3.0040703181556694,
+        "interpretation": "Separate nominal-resolution diagnostics; their sum is not a certified error bound or a probability interval. Resolution/input interactions were not exhaustively tested."
+      },
+      "panel3": {
+        "largest_observed_nominal_curve_shifts_K": {
+          "spatial": 0.9266212327106018,
+          "temporal": 0.5577944971965962,
+          "angular": 0.005336634298828358
+        },
+        "sum_of_largest_observed_shifts_K": 1.4897523642060264,
+        "largest_conditional_band_half_width_K": 4.053236790019042,
+        "interpretation": "Separate nominal-resolution diagnostics; their sum is not a certified error bound or a probability interval. Resolution/input interactions were not exhaustively tested."
+      },
+      "panel4": {
+        "largest_observed_nominal_curve_shifts_K": {
+          "spatial": 0.8749515625039521,
+          "temporal": 0.6243936882256094,
+          "angular": 0.0051499776746481984
+        },
+        "sum_of_largest_observed_shifts_K": 1.5044952284042097,
+        "largest_conditional_band_half_width_K": 4.59933589626101,
+        "interpretation": "Separate nominal-resolution diagnostics; their sum is not a certified error bound or a probability interval. Resolution/input interactions were not exhaustively tested."
+      },
+      "panel5": {
+        "largest_observed_nominal_curve_shifts_K": {
+          "spatial": 0.36008669661367776,
+          "temporal": 0.08322627247574133,
+          "angular": 0.0007583897561289632
+        },
+        "sum_of_largest_observed_shifts_K": 0.44407135884554805,
+        "largest_conditional_band_half_width_K": 3.414660124547936,
+        "interpretation": "Separate nominal-resolution diagnostics; their sum is not a certified error bound or a probability interval. Resolution/input interactions were not exhaustively tested."
+      },
+      "panel6": {
+        "largest_observed_nominal_curve_shifts_K": {
+          "spatial": 0.35823645485777433,
+          "temporal": 0.08328349162107429,
+          "angular": 0.001820661038379967
+        },
+        "sum_of_largest_observed_shifts_K": 0.4433406075172286,
+        "largest_conditional_band_half_width_K": 3.4177078977821793,
+        "interpretation": "Separate nominal-resolution diagnostics; their sum is not a certified error bound or a probability interval. Resolution/input interactions were not exhaustively tested."
+      },
+      "pcb1": {
+        "largest_observed_nominal_curve_shifts_K": {
+          "spatial": 0.1562185371796545,
+          "temporal": 0.0652573631785458,
+          "angular": 0.005160604364050414
+        },
+        "sum_of_largest_observed_shifts_K": 0.22663650472225072,
+        "largest_conditional_band_half_width_K": 3.431476512161396,
+        "interpretation": "Separate nominal-resolution diagnostics; their sum is not a certified error bound or a probability interval. Resolution/input interactions were not exhaustively tested."
+      },
+      "pcb2": {
+        "largest_observed_nominal_curve_shifts_K": {
+          "spatial": 0.15185368303593805,
+          "temporal": 0.03249951121227923,
+          "angular": 0.0032406957150783455
+        },
+        "sum_of_largest_observed_shifts_K": 0.18759388996329562,
+        "largest_conditional_band_half_width_K": 3.1808960129209822,
+        "interpretation": "Separate nominal-resolution diagnostics; their sum is not a certified error bound or a probability interval. Resolution/input interactions were not exhaustively tested."
+      },
+      "pcb3": {
+        "largest_observed_nominal_curve_shifts_K": {
+          "spatial": 0.2351587908015631,
+          "temporal": 0.06334345536276942,
+          "angular": 0.0037129725318436613
+        },
+        "sum_of_largest_observed_shifts_K": 0.3022152186961762,
+        "largest_conditional_band_half_width_K": 3.462790555957355,
+        "interpretation": "Separate nominal-resolution diagnostics; their sum is not a certified error bound or a probability interval. Resolution/input interactions were not exhaustively tested."
+      },
+      "pcb4": {
+        "largest_observed_nominal_curve_shifts_K": {
+          "spatial": 0.17585973589649484,
+          "temporal": 0.07221044683751643,
+          "angular": 0.0030735466071405426
+        },
+        "sum_of_largest_observed_shifts_K": 0.2511437293411518,
+        "largest_conditional_band_half_width_K": 3.559096618805796,
+        "interpretation": "Separate nominal-resolution diagnostics; their sum is not a certified error bound or a probability interval. Resolution/input interactions were not exhaustively tested."
+      }
+    }
+  }
+}

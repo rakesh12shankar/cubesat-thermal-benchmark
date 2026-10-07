@@ -1,0 +1,669 @@
+{
+  "study": "Direct-interface zero-conductance limits; unchanged geometry and radiation",
+  "acceptance_note": "0.1 K nodal periodicity is a study target, not an externally mandated tolerance. Cases above it remain transient screening results.",
+  "limitations": "No finite contact-conductance calibration or experimental validation. Coincident sealed interfaces, unchanged radiation surfaces, and alternate paths through frame at junctions remain. This cannot recover author CAD or isolate view-factor algorithm differences. Nodal extremes and spatial spreads are coarse-mesh diagnostics; formal spatial and through-thickness convergence remains necessary.",
+  "cases": {
+    "bonded_control": {
+      "pooled_journal_rmse_K": 4.280532684151601,
+      "maximum_journal_temperature_difference_K": 15.073989707956684,
+      "periodicity_max_node_K": 0.00688661599997431,
+      "settled_to_0p1K": true,
+      "energy_rms_W": 9.51520274281686e-07,
+      "battery_average_min_K": 269.6015866557969,
+      "battery_average_max_K": 277.52823918811714,
+      "battery_nodal_range": {
+        "minimum_K": 269.189666688,
+        "maximum_K": 277.772717555,
+        "maximum_simultaneous_spread_K": 0.8626910360000011
+      },
+      "component_nodal_ranges": {
+        "battery": {
+          "minimum_K": 269.189666688,
+          "maximum_K": 277.772717555,
+          "maximum_simultaneous_spread_K": 0.8626910360000011
+        },
+        "bolts": {
+          "minimum_K": 249.775751142,
+          "maximum_K": 291.807887262,
+          "maximum_simultaneous_spread_K": 14.296167542999967
+        },
+        "frame": {
+          "minimum_K": 244.56816382,
+          "maximum_K": 301.97011511,
+          "maximum_simultaneous_spread_K": 22.035623320000013
+        },
+        "panel1": {
+          "minimum_K": 232.406138076,
+          "maximum_K": 348.170874756,
+          "maximum_simultaneous_spread_K": 60.41871086200001
+        },
+        "panel2": {
+          "minimum_K": 248.580339245,
+          "maximum_K": 301.15369482,
+          "maximum_simultaneous_spread_K": 21.354733839000005
+        },
+        "panel3": {
+          "minimum_K": 241.971291829,
+          "maximum_K": 339.53364568,
+          "maximum_simultaneous_spread_K": 68.24606851200002
+        },
+        "panel4": {
+          "minimum_K": 239.874040632,
+          "maximum_K": 358.004579599,
+          "maximum_simultaneous_spread_K": 64.30849860000001
+        },
+        "panel5": {
+          "minimum_K": 238.468339162,
+          "maximum_K": 300.022249625,
+          "maximum_simultaneous_spread_K": 39.62841850000001
+        },
+        "panel6": {
+          "minimum_K": 238.439159677,
+          "maximum_K": 300.028544295,
+          "maximum_simultaneous_spread_K": 39.665725398999996
+        },
+        "pcb1": {
+          "minimum_K": 244.968042077,
+          "maximum_K": 300.411859877,
+          "maximum_simultaneous_spread_K": 27.912510348000012
+        },
+        "pcb2": {
+          "minimum_K": 244.656809942,
+          "maximum_K": 301.648538784,
+          "maximum_simultaneous_spread_K": 28.09449341300001
+        },
+        "pcb3": {
+          "minimum_K": 244.649777754,
+          "maximum_K": 301.652352611,
+          "maximum_simultaneous_spread_K": 27.332953949
+        },
+        "pcb4": {
+          "minimum_K": 244.954789027,
+          "maximum_K": 300.417995506,
+          "maximum_simultaneous_spread_K": 28.394610623000005
+        }
+      },
+      "per_component_journal_comparison": {
+        "panel1": {
+          "rmse_K": 6.869085732668121,
+          "max_abs_difference_K": 14.722840316240422,
+          "mean_bias_K": -3.50072242754442
+        },
+        "panel2": {
+          "rmse_K": 3.7304493101480882,
+          "max_abs_difference_K": 5.343732700363262,
+          "mean_bias_K": -3.535162679399816
+        },
+        "panel3": {
+          "rmse_K": 6.617780802881826,
+          "max_abs_difference_K": 15.073989707956684,
+          "mean_bias_K": -3.304538946898872
+        },
+        "panel4": {
+          "rmse_K": 5.742460982487934,
+          "max_abs_difference_K": 14.182081312905098,
+          "mean_bias_K": -2.976454448172738
+        },
+        "panel5": {
+          "rmse_K": 3.8426759063971225,
+          "max_abs_difference_K": 5.805446692061764,
+          "mean_bias_K": 3.368607283771559
+        },
+        "panel6": {
+          "rmse_K": 3.053298589983254,
+          "max_abs_difference_K": 4.806864811869332,
+          "mean_bias_K": 2.5728810099726718
+        },
+        "pcb4": {
+          "rmse_K": 2.4337319386904412,
+          "max_abs_difference_K": 4.3101138014311005,
+          "mean_bias_K": -1.7305076223729337
+        },
+        "pcb3": {
+          "rmse_K": 3.632521193201565,
+          "max_abs_difference_K": 6.074846956559554,
+          "mean_bias_K": -2.9569844956059326
+        },
+        "pcb2": {
+          "rmse_K": 3.1001213799441616,
+          "max_abs_difference_K": 5.17744830654658,
+          "mean_bias_K": -2.3709591754410115
+        },
+        "pcb1": {
+          "rmse_K": 2.0167097765792352,
+          "max_abs_difference_K": 3.6842778479486356,
+          "mean_bias_K": -1.2542945181305325
+        },
+        "battery": {
+          "rmse_K": 2.6069457702987178,
+          "max_abs_difference_K": 3.901280937525314,
+          "mean_bias_K": -2.3599243055983243
+        }
+      },
+      "interface_provenance": {
+        "label": "bonded_control",
+        "duration_s": 11160,
+        "dt_max_s": 10,
+        "source_phase_zero": "balanced_strict final time 11160 s",
+        "split_original_nodes": 0,
+        "nodes": 4093,
+        "retained_alternate_path_junctions": 0,
+        "interpretation": "Zero direct conductance limiting diagnostic, not recovered author interfaces. Alternate connections at junctions retained; surfaces are coincident and sealed, so no new radiation is introduced.",
+        "control": "Same element geometry, properties, exterior loads, radiation facets, numerical settings and mapped initial field. Bonded control uses identical original connectivity."
+      },
+      "initial_screening_periodicity_K": 0.00688661599997431,
+      "maximum_component_average_change_from_control_K": 0.0,
+      "component_average_changes_from_control_K": {
+        "panel1": 0.0,
+        "panel2": 0.0,
+        "panel3": 0.0,
+        "panel4": 0.0,
+        "panel5": 0.0,
+        "panel6": 0.0,
+        "pcb4": 0.0,
+        "pcb3": 0.0,
+        "pcb2": 0.0,
+        "pcb1": 0.0,
+        "battery": 0.0
+      }
+    },
+    "seams_off": {
+      "pooled_journal_rmse_K": 4.277703105346178,
+      "maximum_journal_temperature_difference_K": 15.078484120904307,
+      "periodicity_max_node_K": 0.01060459699999683,
+      "settled_to_0p1K": true,
+      "energy_rms_W": 9.489556144365947e-07,
+      "battery_average_min_K": 269.60659171981246,
+      "battery_average_max_K": 277.5353270605938,
+      "battery_nodal_range": {
+        "minimum_K": 269.194656949,
+        "maximum_K": 277.779861408,
+        "maximum_simultaneous_spread_K": 0.8626101830000152
+      },
+      "component_nodal_ranges": {
+        "battery": {
+          "minimum_K": 269.194656949,
+          "maximum_K": 277.779861408,
+          "maximum_simultaneous_spread_K": 0.8626101830000152
+        },
+        "bolts": {
+          "minimum_K": 249.780401201,
+          "maximum_K": 291.811342366,
+          "maximum_simultaneous_spread_K": 14.29422427000003
+        },
+        "frame": {
+          "minimum_K": 244.573351366,
+          "maximum_K": 301.972759395,
+          "maximum_simultaneous_spread_K": 22.030449365000038
+        },
+        "panel1": {
+          "minimum_K": 232.408685293,
+          "maximum_K": 348.172620164,
+          "maximum_simultaneous_spread_K": 60.41940586299995
+        },
+        "panel2": {
+          "minimum_K": 248.677928475,
+          "maximum_K": 301.271528841,
+          "maximum_simultaneous_spread_K": 21.27558639
+        },
+        "panel3": {
+          "minimum_K": 241.974123679,
+          "maximum_K": 339.535439708,
+          "maximum_simultaneous_spread_K": 68.24621283099998
+        },
+        "panel4": {
+          "minimum_K": 239.876748248,
+          "maximum_K": 358.005987199,
+          "maximum_simultaneous_spread_K": 64.305806539
+        },
+        "panel5": {
+          "minimum_K": 238.471512318,
+          "maximum_K": 300.064392572,
+          "maximum_simultaneous_spread_K": 39.79634757000002
+        },
+        "panel6": {
+          "minimum_K": 238.442227036,
+          "maximum_K": 300.074607575,
+          "maximum_simultaneous_spread_K": 39.832960286
+        },
+        "pcb1": {
+          "minimum_K": 244.973290981,
+          "maximum_K": 300.414643353,
+          "maximum_simultaneous_spread_K": 27.90823799499998
+        },
+        "pcb2": {
+          "minimum_K": 244.662041983,
+          "maximum_K": 301.651256577,
+          "maximum_simultaneous_spread_K": 28.087820297999997
+        },
+        "pcb3": {
+          "minimum_K": 244.655004428,
+          "maximum_K": 301.655060361,
+          "maximum_simultaneous_spread_K": 27.328034650999996
+        },
+        "pcb4": {
+          "minimum_K": 244.960019123,
+          "maximum_K": 300.420755476,
+          "maximum_simultaneous_spread_K": 28.39111903500003
+        }
+      },
+      "per_component_journal_comparison": {
+        "panel1": {
+          "rmse_K": 6.862395256429897,
+          "max_abs_difference_K": 14.70853440377607,
+          "mean_bias_K": -3.4942767278845928
+        },
+        "panel2": {
+          "rmse_K": 3.725237159925275,
+          "max_abs_difference_K": 5.337417533874543,
+          "mean_bias_K": -3.5297220313368323
+        },
+        "panel3": {
+          "rmse_K": 6.62016646401912,
+          "max_abs_difference_K": 15.078484120904307,
+          "mean_bias_K": -3.3018946592498803
+        },
+        "panel4": {
+          "rmse_K": 5.740247936914272,
+          "max_abs_difference_K": 14.181866021873986,
+          "mean_bias_K": -2.9737234183792056
+        },
+        "panel5": {
+          "rmse_K": 3.840765795209047,
+          "max_abs_difference_K": 5.801122866510013,
+          "mean_bias_K": 3.366776186367867
+        },
+        "panel6": {
+          "rmse_K": 3.0512713086654335,
+          "max_abs_difference_K": 4.802459400683745,
+          "mean_bias_K": 2.570980136877086
+        },
+        "pcb4": {
+          "rmse_K": 2.431002780768616,
+          "max_abs_difference_K": 4.306187769000246,
+          "mean_bias_K": -1.7266061659011978
+        },
+        "pcb3": {
+          "rmse_K": 3.628982351274524,
+          "max_abs_difference_K": 6.070586330866604,
+          "mean_bias_K": -2.95243455557342
+        },
+        "pcb2": {
+          "rmse_K": 3.094713387137775,
+          "max_abs_difference_K": 5.169565305074514,
+          "mean_bias_K": -2.3645958106753597
+        },
+        "pcb1": {
+          "rmse_K": 2.0140837402145135,
+          "max_abs_difference_K": 3.6799363097629794,
+          "mean_bias_K": -1.2498323365373967
+        },
+        "battery": {
+          "rmse_K": 2.6008578028824223,
+          "max_abs_difference_K": 3.8960530146425185,
+          "mean_bias_K": -2.352925874446819
+        }
+      },
+      "interface_provenance": {
+        "label": "seams_off",
+        "duration_s": 11160,
+        "dt_max_s": 10,
+        "source_phase_zero": "balanced_strict final time 11160 s",
+        "split_original_nodes": 172,
+        "nodes": 4273,
+        "retained_alternate_path_junctions": 156,
+        "interpretation": "Zero direct conductance limiting diagnostic, not recovered author interfaces. Alternate connections at junctions retained; surfaces are coincident and sealed, so no new radiation is introduced.",
+        "control": "Same element geometry, properties, exterior loads, radiation facets, numerical settings and mapped initial field. Bonded control uses identical original connectivity.",
+        "initial_state_source": "interface_seams_off_settled final phase-zero state",
+        "extension": "Two additional fully resolved 10 s orbits after the six warm-up and two resolved-orbit extension; comparison uses final orbit only."
+      },
+      "initial_screening_periodicity_K": 0.8526295350000055,
+      "maximum_component_average_change_from_control_K": 0.015018388794430848,
+      "component_average_changes_from_control_K": {
+        "panel1": 0.015018388794430848,
+        "panel2": 0.010289253138807908,
+        "panel3": 0.008577807465712795,
+        "panel4": 0.007347408711211756,
+        "panel5": 0.005474270401919057,
+        "panel6": 0.005554713305912173,
+        "pcb4": 0.005252075805572076,
+        "pcb3": 0.006503373087412001,
+        "pcb2": 0.009391727883496515,
+        "pcb1": 0.006174283833502159,
+        "battery": 0.010714362382884701
+      }
+    },
+    "pcb_frame_off": {
+      "pooled_journal_rmse_K": 4.275027522046914,
+      "maximum_journal_temperature_difference_K": 15.031031151836373,
+      "periodicity_max_node_K": 0.010503451999966273,
+      "settled_to_0p1K": true,
+      "energy_rms_W": 9.405536552674325e-07,
+      "battery_average_min_K": 269.6027699558204,
+      "battery_average_max_K": 277.26733640585934,
+      "battery_nodal_range": {
+        "minimum_K": 269.198778565,
+        "maximum_K": 277.50054531,
+        "maximum_simultaneous_spread_K": 0.8305607169999689
+      },
+      "component_nodal_ranges": {
+        "battery": {
+          "minimum_K": 269.198778565,
+          "maximum_K": 277.50054531,
+          "maximum_simultaneous_spread_K": 0.8305607169999689
+        },
+        "bolts": {
+          "minimum_K": 250.708319341,
+          "maximum_K": 290.413922707,
+          "maximum_simultaneous_spread_K": 13.377189649000002
+        },
+        "frame": {
+          "minimum_K": 244.10700708,
+          "maximum_K": 302.478778737,
+          "maximum_simultaneous_spread_K": 22.413302552999994
+        },
+        "panel1": {
+          "minimum_K": 232.305403362,
+          "maximum_K": 348.167405903,
+          "maximum_simultaneous_spread_K": 60.062674207999976
+        },
+        "panel2": {
+          "minimum_K": 248.244118336,
+          "maximum_K": 301.520817727,
+          "maximum_simultaneous_spread_K": 21.564012526
+        },
+        "panel3": {
+          "minimum_K": 241.85753578,
+          "maximum_K": 339.500561642,
+          "maximum_simultaneous_spread_K": 68.10726542399999
+        },
+        "panel4": {
+          "minimum_K": 239.759144364,
+          "maximum_K": 357.977556582,
+          "maximum_simultaneous_spread_K": 64.156914358
+        },
+        "panel5": {
+          "minimum_K": 238.421562857,
+          "maximum_K": 300.333701024,
+          "maximum_simultaneous_spread_K": 39.87484918499996
+        },
+        "panel6": {
+          "minimum_K": 238.396096372,
+          "maximum_K": 300.336407188,
+          "maximum_simultaneous_spread_K": 39.912768329000016
+        },
+        "pcb1": {
+          "minimum_K": 251.110743975,
+          "maximum_K": 290.805097158,
+          "maximum_simultaneous_spread_K": 16.76195319599998
+        },
+        "pcb2": {
+          "minimum_K": 251.304189482,
+          "maximum_K": 290.995599165,
+          "maximum_simultaneous_spread_K": 22.00693881000001
+        },
+        "pcb3": {
+          "minimum_K": 251.224866329,
+          "maximum_K": 292.986953872,
+          "maximum_simultaneous_spread_K": 19.002836113
+        },
+        "pcb4": {
+          "minimum_K": 251.023344597,
+          "maximum_K": 290.934383721,
+          "maximum_simultaneous_spread_K": 17.756788266
+        }
+      },
+      "per_component_journal_comparison": {
+        "panel1": {
+          "rmse_K": 6.748841823859442,
+          "max_abs_difference_K": 14.520880107227072,
+          "mean_bias_K": -3.522294410910459
+        },
+        "panel2": {
+          "rmse_K": 3.7638681489365564,
+          "max_abs_difference_K": 5.314350083893089,
+          "mean_bias_K": -3.550471382649292
+        },
+        "panel3": {
+          "rmse_K": 6.598567781564477,
+          "max_abs_difference_K": 15.031031151836373,
+          "mean_bias_K": -3.31892230757023
+        },
+        "panel4": {
+          "rmse_K": 5.734222508948115,
+          "max_abs_difference_K": 14.081792924358467,
+          "mean_bias_K": -2.9986948718622086
+        },
+        "panel5": {
+          "rmse_K": 3.8470014287393695,
+          "max_abs_difference_K": 5.8089451762970725,
+          "mean_bias_K": 3.337770045585176
+        },
+        "panel6": {
+          "rmse_K": 3.0616341741676205,
+          "max_abs_difference_K": 4.806967898290168,
+          "mean_bias_K": 2.542020936659194
+        },
+        "pcb4": {
+          "rmse_K": 2.362614593878208,
+          "max_abs_difference_K": 4.0540351864690365,
+          "mean_bias_K": -1.847761244583087
+        },
+        "pcb3": {
+          "rmse_K": 3.6095864259837698,
+          "max_abs_difference_K": 5.819775482082036,
+          "mean_bias_K": -3.0946492011736435
+        },
+        "pcb2": {
+          "rmse_K": 3.3487936589450955,
+          "max_abs_difference_K": 5.603603476362082,
+          "mean_bias_K": -2.5158202371086404
+        },
+        "pcb1": {
+          "rmse_K": 1.926612787303422,
+          "max_abs_difference_K": 3.4373376064958734,
+          "mean_bias_K": -1.371917185659402
+        },
+        "battery": {
+          "rmse_K": 2.681072174217723,
+          "max_abs_difference_K": 3.8801930506346025,
+          "mean_bias_K": -2.484373467262708
+        }
+      },
+      "interface_provenance": {
+        "label": "pcb_frame_off",
+        "duration_s": 11160,
+        "dt_max_s": 10,
+        "source_phase_zero": "balanced_strict final time 11160 s",
+        "split_original_nodes": 96,
+        "nodes": 4189,
+        "retained_alternate_path_junctions": 0,
+        "interpretation": "Zero direct conductance limiting diagnostic, not recovered author interfaces. Alternate connections at junctions retained; surfaces are coincident and sealed, so no new radiation is introduced.",
+        "control": "Same element geometry, properties, exterior loads, radiation facets, numerical settings and mapped initial field. Bonded control uses identical original connectivity.",
+        "initial_state_source": "interface_pcb_frame_off_settled final phase-zero state",
+        "extension": "Two additional fully resolved 10 s orbits after the six warm-up and two resolved-orbit extension; comparison uses final orbit only."
+      },
+      "initial_screening_periodicity_K": 12.714038818000006,
+      "maximum_component_average_change_from_control_K": 0.5839174227567128,
+      "component_average_changes_from_control_K": {
+        "panel1": 0.273923212508663,
+        "panel2": 0.25738602768049645,
+        "panel3": 0.2568085970207221,
+        "panel4": 0.2616754477819825,
+        "panel5": 0.12577222888933193,
+        "panel6": 0.12442621645922713,
+        "pcb4": 0.5233387747439906,
+        "pcb3": 0.5839174227567128,
+        "pcb2": 0.43498797062147787,
+        "pcb1": 0.505473414244193,
+        "battery": 0.2736174745782023
+      }
+    },
+    "both_off": {
+      "pooled_journal_rmse_K": 4.273249005326712,
+      "maximum_journal_temperature_difference_K": 15.036381044103337,
+      "periodicity_max_node_K": 0.01050105199999507,
+      "settled_to_0p1K": true,
+      "energy_rms_W": 9.364160031470248e-07,
+      "battery_average_min_K": 269.6042446564688,
+      "battery_average_max_K": 277.2683465594845,
+      "battery_nodal_range": {
+        "minimum_K": 269.200264652,
+        "maximum_K": 277.501550571,
+        "maximum_simultaneous_spread_K": 0.8305517489999943
+      },
+      "component_nodal_ranges": {
+        "battery": {
+          "minimum_K": 269.200264652,
+          "maximum_K": 277.501550571,
+          "maximum_simultaneous_spread_K": 0.8305517489999943
+        },
+        "bolts": {
+          "minimum_K": 250.711247951,
+          "maximum_K": 290.414928262,
+          "maximum_simultaneous_spread_K": 13.375532057999976
+        },
+        "frame": {
+          "minimum_K": 244.11097285,
+          "maximum_K": 302.479537941,
+          "maximum_simultaneous_spread_K": 22.408094909
+        },
+        "panel1": {
+          "minimum_K": 232.306541956,
+          "maximum_K": 348.167575003,
+          "maximum_simultaneous_spread_K": 60.06408179199997
+        },
+        "panel2": {
+          "minimum_K": 248.338622873,
+          "maximum_K": 301.636466843,
+          "maximum_simultaneous_spread_K": 21.485254253999983
+        },
+        "panel3": {
+          "minimum_K": 241.858958724,
+          "maximum_K": 339.501606856,
+          "maximum_simultaneous_spread_K": 68.10769865499998
+        },
+        "panel4": {
+          "minimum_K": 239.760598431,
+          "maximum_K": 357.977823096,
+          "maximum_simultaneous_spread_K": 64.15465645199998
+        },
+        "panel5": {
+          "minimum_K": 238.423576948,
+          "maximum_K": 300.311680549,
+          "maximum_simultaneous_spread_K": 40.039781360000006
+        },
+        "panel6": {
+          "minimum_K": 238.398114848,
+          "maximum_K": 300.31853016,
+          "maximum_simultaneous_spread_K": 40.07774350300002
+        },
+        "pcb1": {
+          "minimum_K": 251.113626127,
+          "maximum_K": 290.806126963,
+          "maximum_simultaneous_spread_K": 16.76019637099995
+        },
+        "pcb2": {
+          "minimum_K": 251.307051242,
+          "maximum_K": 290.996618691,
+          "maximum_simultaneous_spread_K": 22.006278854000016
+        },
+        "pcb3": {
+          "minimum_K": 251.227733881,
+          "maximum_K": 292.987623101,
+          "maximum_simultaneous_spread_K": 19.002725046999984
+        },
+        "pcb4": {
+          "minimum_K": 251.026233225,
+          "maximum_K": 290.935432346,
+          "maximum_simultaneous_spread_K": 17.755052767999985
+        }
+      },
+      "per_component_journal_comparison": {
+        "panel1": {
+          "rmse_K": 6.74301969227213,
+          "max_abs_difference_K": 14.508695238160385,
+          "mean_bias_K": -3.5173032063716745
+        },
+        "panel2": {
+          "rmse_K": 3.7601051467006226,
+          "max_abs_difference_K": 5.306944180973289,
+          "mean_bias_K": -3.5465315652774905
+        },
+        "panel3": {
+          "rmse_K": 6.601391041429418,
+          "max_abs_difference_K": 15.036381044103337,
+          "mean_bias_K": -3.317762362459332
+        },
+        "panel4": {
+          "rmse_K": 5.732653328811658,
+          "max_abs_difference_K": 14.082923719290136,
+          "mean_bias_K": -2.9974444748500533
+        },
+        "panel5": {
+          "rmse_K": 3.8435996666963135,
+          "max_abs_difference_K": 5.802890394783503,
+          "mean_bias_K": 3.334352515703275
+        },
+        "panel6": {
+          "rmse_K": 3.0582234434118827,
+          "max_abs_difference_K": 4.800910043805004,
+          "mean_bias_K": 2.5386016603900576
+        },
+        "pcb4": {
+          "rmse_K": 2.361245482365799,
+          "max_abs_difference_K": 4.051939220943666,
+          "mean_bias_K": -1.8464096808708097
+        },
+        "pcb3": {
+          "rmse_K": 3.608274267174692,
+          "max_abs_difference_K": 5.817872880138623,
+          "mean_bias_K": -3.0933687358398685
+        },
+        "pcb2": {
+          "rmse_K": 3.348010488765551,
+          "max_abs_difference_K": 5.602767041521815,
+          "mean_bias_K": -2.5145530812439802
+        },
+        "pcb1": {
+          "rmse_K": 1.925316507410225,
+          "max_abs_difference_K": 3.4352744276327485,
+          "mean_bias_K": -1.3705655529707748
+        },
+        "battery": {
+          "rmse_K": 2.679872047797894,
+          "max_abs_difference_K": 3.8786964286032912,
+          "mean_bias_K": -2.483152841815015
+        }
+      },
+      "interface_provenance": {
+        "label": "both_off",
+        "duration_s": 11160,
+        "dt_max_s": 10,
+        "source_phase_zero": "balanced_strict final time 11160 s",
+        "split_original_nodes": 268,
+        "nodes": 4369,
+        "retained_alternate_path_junctions": 156,
+        "interpretation": "Zero direct conductance limiting diagnostic, not recovered author interfaces. Alternate connections at junctions retained; surfaces are coincident and sealed, so no new radiation is introduced.",
+        "control": "Same element geometry, properties, exterior loads, radiation facets, numerical settings and mapped initial field. Bonded control uses identical original connectivity.",
+        "initial_state_source": "interface_both_off_settled final phase-zero state",
+        "extension": "Two additional fully resolved 10 s orbits after the six warm-up and two resolved-orbit extension; comparison uses final orbit only."
+      },
+      "initial_screening_periodicity_K": 12.714487657999996,
+      "maximum_component_average_change_from_control_K": 0.5834607198255526,
+      "component_average_changes_from_control_K": {
+        "panel1": 0.27304049298891186,
+        "panel2": 0.25425932971796783,
+        "panel3": 0.25404605618365395,
+        "panel4": 0.25836928895463984,
+        "panel5": 0.12807257683311946,
+        "panel6": 0.12687582634640648,
+        "pcb4": 0.5230462832173544,
+        "pcb3": 0.5834607198255526,
+        "pcb2": 0.4341554841436164,
+        "pcb1": 0.5051543645325864,
+        "battery": 0.2726677663906685
+      }
+    }
+  }
+}

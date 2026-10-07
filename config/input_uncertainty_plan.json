@@ -1,0 +1,59 @@
+{
+  "joint_initial_state_note": "Combined-input cases start from a phase-zero affine combination of the qualified endpoint nodal fields. This is an initialization guess only; all reported joint results come from full nonlinear ANSYS runs with independently checked final periodicity. Chosen before observing joint-case results.",
+  "purpose": "Assumption-based input uncertainty screening of the reconstructed model; not experimental validation or a statistical explanation of the source-paper discrepancy.",
+  "range_basis": "The paper supplies nominal constants, not uncertainty intervals. All half-widths below are analyst-declared engineering assumptions, fixed before the scenario results.",
+  "distribution_assumption": "Independent uniform normalized inputs on [-1,1]; capacity_scale is one correlated multiplier on all material heat capacities. No measured probabilities are claimed.",
+  "factors": {
+    "alpha": {
+      "nominal": 0.77,
+      "half_width": 0.03,
+      "units": "dimensionless",
+      "scope": "solar and albedo absorptivity"
+    },
+    "external_epsilon": {
+      "nominal": 0.72,
+      "half_width": 0.03,
+      "units": "dimensionless",
+      "scope": "exterior thermal emission and Earth-IR absorption together"
+    },
+    "internal_epsilon": {
+      "nominal": 0.5,
+      "half_width": 0.05,
+      "units": "dimensionless",
+      "scope": "all internal radiating faces"
+    },
+    "capacity_scale": {
+      "nominal": 1.0,
+      "half_width": 0.1,
+      "units": "multiplier",
+      "scope": "all specific heat capacities; density and geometry fixed"
+    },
+    "panel_k": {
+      "nominal": 1.03,
+      "half_width": 0.206,
+      "units": "W/(m K)",
+      "scope": "panel thermal conductivity"
+    },
+    "pcb_k": {
+      "nominal": 0.64,
+      "half_width": 0.128,
+      "units": "W/(m K)",
+      "scope": "PCB thermal conductivity"
+    }
+  },
+  "method": "Paired full-ANSYS endpoint scenarios, local central-difference response propagation and midpoint-curvature checks. Numerical resolution effects are reported separately and are not disguised as physical input uncertainty.",
+  "exclusions": [
+    "geometry and mass measurement uncertainty",
+    "finite contact-conductance distributions",
+    "orbital beta, attitude and ephemeris uncertainty",
+    "temperature-dependent or nongray property laws",
+    "model-form disagreement with the source solver"
+  ],
+  "periodicity_target_K": 0.01,
+  "reproducibility_seed": 20261007,
+  "propagation_draws": 10000,
+  "joint_check_design": "After paired screening, choose the high/low endpoint of each factor that raises battery average at the nominal battery-peak phase. Solve that combined corner and its opposite with full nonlinear ANSYS. These check the affine approximation; they are not reference-data fits.",
+  "curvature_interpretation": "Midpoint deviations are compared with the magnitude of input responses. Orbital periodicity defects and numerical-resolution changes limit interpretation of small curvature values.",
+  "initial_screening_periodicity_target_K": 0.1,
+  "periodicity_tightening_basis": "Tightened from 0.1 K after observing the capacity_scale=0.9 cycle defect of 0.0756 K. Smaller sensitivities and curvature checks require lower residual drift. This changes numerical qualification only; all physical ranges and nominal values remain fixed."
+}

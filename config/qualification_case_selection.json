@@ -1,0 +1,71 @@
+{
+  "spatial": [
+    "convergence_h15_features1",
+    "convergence_h10_features2",
+    "convergence_h7.5_features3"
+  ],
+  "temporal": [
+    "convergence_h15_features1",
+    "convergence_dt5_extend",
+    "convergence_dt2.5"
+  ],
+  "angular": [
+    "convergence_h15_features1",
+    "convergence_hemicube40",
+    "convergence_hemicube80"
+  ],
+  "uncertainty_control": "convergence_h15_features1",
+  "uncertainty": {
+    "alpha": {
+      "low": "uncertainty_alpha_low_extend",
+      "high": "uncertainty_alpha_high_extend"
+    },
+    "external_epsilon": {
+      "low": "uncertainty_external_epsilon_low_extend",
+      "high": "uncertainty_external_epsilon_high_extend_extend"
+    },
+    "internal_epsilon": {
+      "low": "uncertainty_internal_epsilon_low_extend",
+      "high": "uncertainty_internal_epsilon_high"
+    },
+    "capacity_scale": {
+      "low": "uncertainty_capacity_scale_low_extend_extend",
+      "high": "uncertainty_capacity_scale_high_extend"
+    },
+    "panel_k": {
+      "low": "uncertainty_panel_k_low_extend",
+      "high": "uncertainty_panel_k_high_extend"
+    },
+    "pcb_k": {
+      "low": "uncertainty_pcb_k_low_extend",
+      "high": "uncertainty_pcb_k_high_extend"
+    }
+  },
+  "joint_checks": [
+    {
+      "case": "uncertainty_joint_peak_hot_extend",
+      "normalized_inputs": {
+        "alpha": 1,
+        "external_epsilon": -1,
+        "internal_epsilon": 1,
+        "capacity_scale": -1,
+        "panel_k": -1,
+        "pcb_k": 1
+      },
+      "design_phase_s": 2310.0
+    },
+    {
+      "case": "uncertainty_joint_peak_cold_extend",
+      "normalized_inputs": {
+        "alpha": -1,
+        "external_epsilon": 1,
+        "internal_epsilon": -1,
+        "capacity_scale": 1,
+        "panel_k": 1,
+        "pcb_k": -1
+      },
+      "design_phase_s": 2310.0
+    }
+  ],
+  "numerical_resolution_note": "Paired screening uses the original mesh, 10 s steps and hemicube resolution 20. Solid-mesh, time-step and angular-resolution discrepancies are reported independently; fine-mesh transfer of sensitivities requires a separate cross-check before claiming resolution-independent input bands."
+}

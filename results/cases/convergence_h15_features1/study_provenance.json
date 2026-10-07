@@ -1,0 +1,11 @@
+{
+  "source_case": "interface_bonded_control",
+  "mesh_h_mm": 15,
+  "thin_region_divisions": 1,
+  "dt_s": 10,
+  "cycles": 2,
+  "duration_s": 11160,
+  "recorded_cycles": 2,
+  "reanalysis_only": true,
+  "note": "Independent streaming reanalysis of the existing matched bonded control; raw history hard-linked privately. No new ANSYS solve."
+}
