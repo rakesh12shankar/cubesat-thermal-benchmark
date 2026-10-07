@@ -53,7 +53,7 @@ def report():
         ax.plot(ref['time_s'],ref[tag],'k--',label='2021 paper')
         ax.set(xlabel='Orbital phase (s)',ylabel='Volume-average temperature (K)',title=tag)
         ax.grid(alpha=.2);ax.legend(fontsize=8)
-    output=ROOT/'04_Results' if (ROOT/'04_Results').exists() else ROOT/'results'
+    output=ROOT/'results' if (ROOT/'results').exists() else ROOT/'results'
     fig.tight_layout();fig.savefig(output/'interface_limits.png',dpi=170);plt.close(fig)
     result={'study':'Direct-interface zero-conductance limits; unchanged geometry and radiation',
       'acceptance_note':'0.1 K nodal periodicity is a study target, not an externally mandated tolerance. Cases above it remain transient screening results.',

@@ -209,4 +209,4 @@ def main(cases,out,selection):
     return result
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--cases',type=Path,default=ROOT/'data/ansys');p.add_argument('--out',type=Path,default=ROOT/'04_Results');p.add_argument('--selection',type=Path,required=True);a=p.parse_args();main(a.cases,a.out,a.selection)
+    p=argparse.ArgumentParser();p.add_argument('--cases',type=Path,default=ROOT/'results/cases');p.add_argument('--out',type=Path,default=ROOT/'results');p.add_argument('--selection',type=Path,required=True);a=p.parse_args();main(a.cases,a.out,a.selection)

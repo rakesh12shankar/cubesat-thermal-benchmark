@@ -30,7 +30,7 @@ def main(ansys):
     initial=np.array([400,300,300,300,300,300]);exact_mean=initial.mean()
     deviation=float(abs(means-exact_mean).max());variance_ratio=float(np.var(temps[-1])/np.var(initial))
     result={'description':'Six separate equal-capacity walls, each 20 J/K; epsilon .5; closed 100 mm cubic enclosure; initial wall temperatures [400,300,300,300,300,300] K. Outer faces adiabatic; no conduction between walls. Exact total stored energy and mean temperature are constant. This verifies gray internal radiation conservation/equilibration, not detailed CubeSat view factors.','exact_capacity_weighted_mean_K':float(exact_mean),'maximum_mean_temperature_drift_K':deviation,'maximum_total_energy_drift_J':deviation*120,'final_wall_average_temperatures_K':temps[-1].tolist(),'final_to_initial_wall_temperature_variance_ratio':variance_ratio,'solver_errors':0,'pass':bool(deviation<.005 and variance_ratio<1 and temps.min()>=299.99 and temps.max()<=400.01)}
-    (ROOT/'04_Results/closed_enclosure_verification.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+    (ROOT/'results/closed_enclosure_verification.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(result,indent=2))
     if not result['pass']:raise RuntimeError('Closed-enclosure conservation check failed.')
 

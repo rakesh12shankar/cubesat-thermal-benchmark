@@ -5,7 +5,7 @@ import numpy as np
 ROOT=Path(__file__).resolve().parent
 
 def main():
-    lab=ROOT/'04_Results'
+    lab=ROOT/'results'
     def case(label):
         if lab.exists():
             qualified=ROOT/'data/ansys'/f'interface_{label}_qualified'

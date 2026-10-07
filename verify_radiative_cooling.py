@@ -33,7 +33,7 @@ def main(ansys):
         summary[str(dt)]={'maximum_step_s':dt,'maximum_temperature_error_K':float(abs(error).max()),'final_MAPDL_K':float(data[-1,1]),'final_analytical_K':float(exact[-1]),'solver_errors':0}
     summary['description']='Uniform 0.1 m cube; rho=1000 kg/m3, c=1000 J/(kg K), k=1e6 W/(m K), epsilon=.72, all six faces radiate to a 0 K sink; no applied heat. Equal nodal temperatures follow from symmetric loads. T(t)=[T0^-3+3 epsilon sigma A t/(rho c V)]^-1/3. This verifies the external radiation implementation and transient integration, not the CubeSat geometry or internal view factors.'
     summary['pass']=summary['1']['maximum_temperature_error_K']<.02 and summary['1']['maximum_temperature_error_K']<summary['10']['maximum_temperature_error_K']
-    (ROOT/'04_Results/analytical_cooling_verification.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
+    (ROOT/'results/analytical_cooling_verification.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
     print(json.dumps(summary,indent=2))
     if not summary['pass']:raise RuntimeError('Analytical cooling check failed.')
 
